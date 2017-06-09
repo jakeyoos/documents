@@ -1,4 +1,4 @@
-# Basic Dimensions
+# Dimension Basics
 
 The proper way to think of a dimension is as a non-aggregate calculation based on column data. That sounds a lot more complicated than it is, so let's unpack it.
 
@@ -11,6 +11,9 @@ By "calculation based on column data" we mean that a dimension is based on your 
 
 All dimensions need *at least* a name, a type, and a SQL definition.  For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/users.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">users</a> view file has a dimension called `first_name` inside of it:
 
+<div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
+ From the <a href="https://learn2.looker.com/projects/e-commerce/files/users.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">users</a> View File</a>
+</div>
 ```
 dimension: first_name {
   type: string
@@ -34,4 +37,28 @@ If we break this down:
 
 
 
-# More Examples
+# Real Examples
+
+Clicking on any of the view files in the left hand pane of this page will reveal multiple examples of dimensions. They won't all be as simple as the example given above, but many are. We'll discuss the more complicated ones in the next few lessons.<br /><br />
+
+
+
+# Try it Yourself
+
+The `orders` table in our dataset has a column called `traffic_source` that hasn't yet been added in LookML. Try adding it using the information you've learned.
+
+[See the Answer](https://learn2.looker.com/projects/e-commerce/files/z_answers.md#dimension-basics)<br /><br />
+
+
+
+## Next Step
+
+Next, we'll look at examples of all the available dimension types.
+
+<div style="float:left;font-weight:bold;">
+  <a href="https://learn2.looker.com/projects/e-commerce/files/1_lookml_basics.md">&#10094; LookML Basics</a>
+</div>
+
+<div style="float:right;font-weight:bold;">
+  <a href="https://learn2.looker.com/projects/e-commerce/files/3_dimension_types.md">Dimension Types &#10095;</a>
+</div>

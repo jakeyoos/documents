@@ -1,5 +1,4 @@
 connection: "thelook_events"
-
 include: "*.view.lkml"
 include: "*.dashboard.lookml"
 

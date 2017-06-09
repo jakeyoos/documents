@@ -26,6 +26,11 @@ view: orders {
     sql: ${TABLE}.status ;;
   }
 
+  dimension: is_complete {
+    type: yesno
+    sql: ${status} = 'complete' ;;
+  }
+
   dimension: traffic_source {
     type: string
     sql: ${TABLE}.traffic_source ;;
