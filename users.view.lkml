@@ -53,14 +53,19 @@ view: users {
     sql: ${TABLE}.first_name ;;
   }
 
-  dimension: gender {
-    type: string
-    sql: ${TABLE}.gender ;;
-  }
-
   dimension: last_name {
     type: string
     sql: ${TABLE}.last_name ;;
+  }
+
+  dimension: full_name {
+    type: string
+    sql: CONCAT(${first_name}, ' ', ${last_name}) ;;
+  }
+
+  dimension: gender {
+    type: string
+    sql: ${TABLE}.gender ;;
   }
 
   dimension: latitude {

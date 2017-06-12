@@ -12,7 +12,7 @@ As mentioned in the intro, you should have a basic comfort level with SQL in ord
 
 
 
-# The Fundamental LookML Structures
+## The Fundamental LookML Structures
 
 There are a few fundamental structures from which you'll build almost everything in LookML:
 
@@ -26,7 +26,7 @@ There are a few fundamental structures from which you'll build almost everything
 
 + *Filters* - It's important to note that, in general, you don't need to explicitly create filters for your users. The dimensions and measures you create will automatically be available to your users as filters. However, there are some advanced use cases where you need to create a filter that *doesn't* have a dimension or measure associated with it. We won't be covering this type of field in this tutorial, but you can read about them in our [Templated Filter](https://looker.com/docs/data-modeling/learning-lookml/templated-filters) doc if you like.
 
-**Views** - Views represent the tables in your database. Or, you can create your own tables within Looker, and then make that into a view.
+**Views** - Views represent the tables in your database. Or, you can create your own tables with Looker, and then make that into a view.
 
 **Explores** - Explores define which views will be made available to users in the Explore menu at the top of Looker. You can also define the join relationships between multiple views to create explores that contain information from multiple views.
 
@@ -34,7 +34,7 @@ There are a few fundamental structures from which you'll build almost everything
 
 
 
-# Where are These Structures Defined?
+## Where are These Structures Defined?
 
 **Fields** live inside of views.
 
@@ -51,5 +51,5 @@ There are a few fundamental structures from which you'll build almost everything
 Let's start by looking at the basics of views.
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/2_dimension_basics.md">View Basics &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/2_view_basics.md">View Basics &#10095;</a>
 </div>

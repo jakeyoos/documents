@@ -31,10 +31,12 @@ view: orders {
     sql: ${status} = 'complete' ;;
   }
 
-  dimension: traffic_source {
-    type: string
-    sql: ${TABLE}.traffic_source ;;
-  }
+  # Remove later: this is a try it yourself question
+  #
+  # dimension: traffic_source {
+  #   type: string
+  #   sql: ${TABLE}.traffic_source ;;
+  # }
 
   dimension: user_id {
     type: number
