@@ -5,3 +5,7 @@ include: "*.dashboard.lookml"
 explore: orders {
   #stuff
 }
+
+explore: products {
+  #stuff
+}

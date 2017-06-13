@@ -26,7 +26,9 @@ If we break this down:
 
   Also note that the row ends with `;;`. This is how Looker knows you're done writing the table name, and is the way all SQL-type parameters are ended in Looker.
 
-You'll notice there are a lot of other dimensions and measures within the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view, but we'll discuss those separately in our <a href="https://learn2.looker.com/projects/e-commerce/files/3_dimension_basics.md">dimension</a> and measures lessons.<br /><br />
+You'll notice there are a lot of other dimensions and measures within the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view, but we'll discuss those separately in our <a href="https://learn2.looker.com/projects/e-commerce/files/3_dimension_basics.md">dimension</a> and measures lessons.
+
+<span style="border:1px solid rgb(234,138,47);border-radius:5px;padding:5px;background-color:rgb(249,238,227);"><a style="color:rgb(234,138,47);font-size:12px;" href="https://learn2.looker.com/explore/e_commerce/orders" target="_blank"><i class="fa fa-search"></i> Explore the Orders View</a></span><br /><br /><br />
 
 
 

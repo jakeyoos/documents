@@ -63,6 +63,25 @@ view: order_items {
   dimension: sale_price {
     type: number
     sql: ${TABLE}.sale_price ;;
+    value_format_name: usd
+  }
+
+  dimension: price_range {
+    case: {
+      when: {
+        sql: ${sale_price} < 20 ;;
+        label: "inexpensive"
+      }
+      when: {
+        sql: ${sale_price} >= 20 AND ${sale_price} < 100 ;;
+        label: "normal"
+      }
+      when: {
+        sql: ${sale_price} >= 100 ;;
+        label: "expensive"
+      }
+      else: "unknown"
+    }
   }
 
   dimension_group: shipped {

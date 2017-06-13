@@ -16,7 +16,7 @@ dimension: first_name {
 }
 ```
 
-Read `type: string` documentation [here](https://looker.com/docs/reference/field-reference/dimension-type-reference#string).<br /><br />
+<span style="border:1px solid rgb(87,190,190);border-radius:5px;padding:5px;background-color:rgb(213,239,238);"><a style="color:rgb(87,190,190);font-size:12px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a></span> <span style="border:1px solid rgb(32,165,222);border-radius:5px;padding:5px;background-color:rgb(199,232,247);"><a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a></span><br /><br />
 
 #### Number
 
@@ -31,6 +31,8 @@ dimension: sale_price {
   sql: ${TABLE}.sale_price ;;
 }
 ```
+
+<span style="border:1px solid rgb(87,190,190);border-radius:5px;padding:5px;"><a style="color:rgb(87,190,190);font-size:12px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a></span> <span style="border:1px solid rgb(32,165,222);border-radius:5px;padding:5px;"><a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a></span><br /><br />
 
 Read `type: number` documentation [here](https://looker.com/docs/reference/field-reference/dimension-type-reference#number).<br /><br />
 
@@ -47,6 +49,8 @@ dimension: is_complete {
   sql: ${status} = 'complete' ;;
 }
 ```
+
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a><br /><br />
 
 You'll see that we've put a statement that will evaluate to true or false in the `sql` parameter. This is required for `yesno` dimensions.
 

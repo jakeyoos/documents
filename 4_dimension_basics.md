@@ -40,8 +40,8 @@ If we break this down:
 
 When you're writing your `sql` parameters, it's important to know about the three types of references you can make:
 
-Pattern | Example | Definition
---------|---------|-----------
+Pattern | Examples | Definition
+--------|----------|-----------
 `${TABLE}.field_name` | `${TABLE}.status`<br />`${TABLE}.sale_price` | This pattern automatically replaces the `${TABLE}` variable with the database table that is associated with the view where the dimension lives.
 `${field_name}` | `${status}`<br />`${sale_price}` | This pattern references an existing field from within the same view.
 `${view_name.field_name}` | `${order.status}`<br />`${order_items.sale_price}` | This pattern references an existing field from a *different* view. Using this pattern does require that you have established the proper joins between views, which we'll discuss a little later.

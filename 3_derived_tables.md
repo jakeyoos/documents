@@ -11,7 +11,7 @@ When you create a derived table, you'll write a SQL query against your database.
 
 If you're familiar with SQL or traditional business intelligence tools, you may be tempted to overuse derived tables. They certainly have valuable and powerful uses, but they are also static. Use regular LookML modeling when possible to create more dynamic and re-usable LookML that gives your users more freedom.<br /><br />
 
-Also, you might be tempted to use derived tables to improve query performance, which <i>is</i> a valid strategy in some contexts. However, many modern databases are so fast that this is unnecessary. Consult your database admins if you're considering this route.
+You might also want to use derived tables to improve query performance, which <i>is</i> a valid strategy in some contexts. However, many modern databases are so fast that this is unnecessary. Consult your database admins if you're considering this route.
 </div><br /><br />
 
 
@@ -48,8 +48,9 @@ If we break this down:
 
 + The fourth to tenth row contain the actual SQL. Remember to end the SQL with `;;`
 
-+ The eleventh row `persist_for: "24 hours"` tells Looker to store the results for 24 hours at a time. If this row was excluded, Looker would calculate the table every time it was used in a query.<br /><br />
++ The eleventh row `persist_for: "24 hours"` tells Looker to store the results for 24 hours at a time. If this row was excluded, Looker would calculate the table every time it was used in a query.
 
+<span style="border:1px solid rgb(234,138,47);border-radius:5px;padding:5px;background-color:rgb(249,238,227);"><a style="color:rgb(234,138,47);font-size:12px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the User Order Facts View</a></span><br /><br /><br />
 
 
 ## Understanding Persistence
