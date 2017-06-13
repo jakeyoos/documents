@@ -9,6 +9,7 @@ view: orders {
 
   dimension_group: created {
     type: time
+    datatype: datetime
     timeframes: [
       raw,
       time,

@@ -25,6 +25,7 @@ view: products {
   dimension: cost {
     type: number
     sql: ${TABLE}.cost ;;
+    value_format: "$0.00"
   }
 
   dimension: department {

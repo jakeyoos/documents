@@ -58,9 +58,37 @@ The conditions are evaluated in the order that you write them. As soon as one co
 
 #### value_format_name and value_format
 
-The `value_format_name` and `value_format` parameters allow you to easily format dimensions as they'll appear to your users.
+The `value_format_name` and `value_format` parameters allow you to easily format dimensions for your users.
 
+The `value_format_name` parameter lets you specify one of several pre-defined formats, which you can see listed in our <a href="(https://looker.com/docs/reference/field-params/value_format_name" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">value_format_name</a> doc. You can create additional named formats by using the <a href="(https://looker.com/docs/reference/model-params/named_value_format" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">named_value_format</a> parameter.
 
+The `value_format` parameter allows you to specify formats that you don't think you'll want to use elsewhere. You can read about how to specify these formats in the <a href="(https://looker.com/docs/reference/field-params/value_format" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">value_format</a> doc.
+
+<div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
+ From the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> View File</a>
+</div>
+```
+dimension: sale_price {
+  type: number
+  sql: ${TABLE}.sale_price ;;
+  value_format_name: usd
+}
+```
+
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a>
+
+<div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
+ From the <a href="https://learn2.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> View File</a>
+</div>
+```
+dimension: cost {
+  type: number
+  sql: ${TABLE}.cost ;;
+  value_format: "$0.00"
+}
+```
+
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a><br /><br />
 
 
 
