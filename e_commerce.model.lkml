@@ -1,11 +1,15 @@
 connection: "thelook_events"
 include: "*.view.lkml"
-include: "*.dashboard.lookml"
+
+explore: products { }
+
 
 explore: orders {
   #stuff
 }
 
-explore: products {
+
+
+explore: users {
   #stuff
 }

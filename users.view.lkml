@@ -84,12 +84,12 @@ view: users {
     sql_longitude: ${longitude} ;;
   }
 
-  dimension: distance_from_distribution_center {
-    type: distance
-    start_location_field: distribution_center.location
-    end_location_field: users.location
-    units: miles
-  }
+  # dimension: distance_from_distribution_center {
+  #   type: distance
+  #   start_location_field: distribution_center.location
+  #   end_location_field: users.location
+  #   units: miles
+  # }
 
   dimension: state {
     type: string
@@ -108,6 +108,22 @@ view: users {
 
   measure: count {
     type: count
-    drill_fields: [id, last_name, first_name, order_items.count]
+    drill_fields: [id, last_name, first_name]
+  }
+
+  measure: men_count {
+    type: count
+    filters: {
+      field: gender
+      value: "Male"
+    }
+  }
+
+  measure: female_count {
+    type: count
+    filters: {
+      field: gender
+      value: "Female"
+    }
   }
 }

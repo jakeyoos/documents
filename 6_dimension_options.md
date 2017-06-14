@@ -2,6 +2,10 @@
 
 Dimensions have many other options that you can take advantage of. They are all documented on our [Field Parameters](https://looker.com/docs/reference/field-reference) doc, but we'll go over some of the most used options here.<br /><br />
 
+#### primary_key
+
+<font color="red">NEED TO ADD CONTENT FOR THIS</font>
+
 #### link
 
 The `link` parameter allows you to create links to other URLs that are related to your data. You specify a label that users will see, a URL that the link should go to, and optionally a link to an icon that users will see.
