@@ -1,6 +1,6 @@
 # LookML Basics
 
-Welcome to our e-commerce tutorial. Unlike the [Name Game](https://learn2.looker.com/projects/name_game/files/lesson_1_text.md), this tutorial goes into considerbally more detail about how to develop in LookML. Since LookML has so many options, this tutorial won't cover every possible option, but it will cover enough to cover almost all common use cases.
+Welcome to our e-commerce tutorial. Unlike the [Name Game](https://learn2.looker.com/projects/name_game/files/lesson_1_text.md), this tutorial goes into considerbally more detail about how to develop in LookML. Since LookML has so many options, this tutorial won't cover every possible detail, but it will cover enough to address the most common use cases.
 
 The data set we're working with here is sales data from an e-commerce clothing store. It has a few, relatively straightforward data tables:
 
@@ -18,11 +18,11 @@ There are a few fundamental structures from which you'll build almost everything
 
 **Fields** - In general, each bit of data that your users are going to choose from will be represented as a LookML field. There are 4 different types of fields:
 
-+ *Dimensions* - An easy way to think of dimensions is that they represent a column of data in a database table, or a transformation or combination of columns. There are some nuances which we'll define with more precision in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/2_dimension_basics.md).
++ *Dimensions* - An easy way to think of dimensions is that they represent a column of data in a database table, or a transformation or combination of columns. There are some nuances which we'll discuss with more detail in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/2_view_basics.md).
 
-+ *Dimension Groups* - Dimension groups allow you to create many dimensions all at once, which saves time. Currently, they're solely for use with time based data.
++ *Dimension Groups* - Dimension groups allow you to create many dimensions all at once. Currently, they're solely for use with time based data.
 
-+ *Measures* - Measures provide information about the dimensions (i.e. groups of data) that users choose. They're represented as aggregate functions - like `COUNT`, `SUM`, and `MAX` - in the SQL query that Looker builds.
++ *Measures* - Measures represent aggregate functions - like `COUNT`, `SUM`, and `MAX` - in the SQL query that Looker builds.
 
 + *Filters* - It's important to note that, in general, you don't need to explicitly create filters for your users. The dimensions and measures you create will automatically be available to your users as filters. However, there are some advanced use cases where you need to create a filter that *doesn't* have a dimension or measure associated with it. We won't be covering this type of field in this tutorial, but you can read about them in our [Templated Filter](https://looker.com/docs/data-modeling/learning-lookml/templated-filters) doc if you like.
 

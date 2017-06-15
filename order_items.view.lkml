@@ -126,7 +126,7 @@ view: order_items {
 
   measure: total_profit {
     type: number
-    sql: ${total_sale_price} - ${product.cost} ;;
+    sql: ${total_sale_price} - ${products.cost} ;;
   }
 
   # ----- Sets of fields for drilling ------

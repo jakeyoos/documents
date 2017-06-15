@@ -1,6 +1,6 @@
 # Derived Tables
 
-If you need to, you can create database tables using Looker. This feature is called "derived tables", which you can read about in more detail in our [Derived Tables](https://looker.com/docs/data-modeling/learning-lookml/derived-tables) documentation.
+If you need to, you can create database tables using Looker's "derived tables" feature, which you can read about in more detail in our [Derived Tables](https://looker.com/docs/data-modeling/learning-lookml/derived-tables) documentation.
 
 Derived tables can be calculated on the fly each time they're queried, or they can be stored in your database. If you want derived tables to be storable, your admins will have needed to enable that feature when they setup Looker.
 
@@ -35,22 +35,23 @@ view: user_order_facts {
       GROUP BY
         customer_id ;;
     persist_for: "24 hours"
-}
 ```
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>User Order Facts</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/view-params/derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>derived_table</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/view-params/sql-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/view-params/persist_for-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>persist_for</b> Docs</a><br /><br />
 
 If we break this down:
 
 + The first row `view: user_order_facts {` creates a view with the name of `user_order_facts`.
 
-+ The second row `derived_table` declares the the view is going to be a derived table.
++ The second row `derived_table: {` declares the the view is going to be a derived table.
 
 + The third row `sql:` starts the section of LookML where you'll write the query for the derived table.
 
-+ The fourth to tenth row contain the actual SQL. Remember to end the SQL with `;;`
++ The fourth to tenth rows contain the actual SQL for the derived table. Remember to end the SQL with `;;`
 
 + The eleventh row `persist_for: "24 hours"` tells Looker to store the results for 24 hours at a time. If this row was excluded, Looker would calculate the table every time it was used in a query.
 
-<span style="border:1px solid rgb(234,138,47);border-radius:5px;padding:5px;background-color:rgb(249,238,227);"><a style="color:rgb(234,138,47);font-size:12px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the User Order Facts View</a></span><br /><br /><br />
+You’ll notice there are a couple other dimensions within the user_order_facts view, which we'll discuss in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/4_dimension_basics.md).<br /><br />
+
 
 
 ## Understanding Persistence

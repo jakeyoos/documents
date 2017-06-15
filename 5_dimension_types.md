@@ -1,6 +1,6 @@
 # Dimension Types
 
-Dimensions have many different types. In this lesson we'll look at examples of all these types and briefly talk about when to use them. For more complete documentation about types, check out our [Dimension and Filter Types](https://looker.com/docs/reference/field-reference/dimension-type-reference) page.<br /><br />
+Dimensions can have many different types. In this lesson we'll look at examples of all these types and briefly talk about when to use them. For more complete documentation about types, check out our [Dimension and Filter Types](https://looker.com/docs/reference/field-reference/dimension-type-reference) page.<br /><br />
 
 #### String
 
@@ -15,12 +15,11 @@ dimension: first_name {
   sql: ${TABLE}.first_name ;;
 }
 ```
-
-<span style="border:1px solid rgb(87,190,190);border-radius:5px;padding:5px;background-color:rgb(213,239,238);"><a style="color:rgb(87,190,190);font-size:12px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a></span> <span style="border:1px solid rgb(32,165,222);border-radius:5px;padding:5px;background-color:rgb(199,232,247);"><a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a></span><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=WFTdUVRhnxmOQmJwZ2wAso" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a><br /><br />
 
 #### Number
 
-The `number` type should be used with number data.
+The `number` type should be used with number or integer data.
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> View File</a>
@@ -31,10 +30,7 @@ dimension: sale_price {
   sql: ${TABLE}.sale_price ;;
 }
 ```
-
-<span style="border:1px solid rgb(87,190,190);border-radius:5px;padding:5px;"><a style="color:rgb(87,190,190);font-size:12px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a></span> <span style="border:1px solid rgb(32,165,222);border-radius:5px;padding:5px;"><a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a></span><br /><br />
-
-Read `type: number` documentation [here](https://looker.com/docs/reference/field-reference/dimension-type-reference#number).<br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=N3Ra8idDQbiCqSaEfRA1w8" target="_blank"><i class="fa fa-search"></i> Explore the <b>Sale Price</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#number" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: number</b> Docs</a><br /><br />
 
 #### YesNo
 
@@ -49,16 +45,11 @@ dimension: is_complete {
   sql: ${status} = 'complete' ;;
 }
 ```
-
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a><br /><br />
-
-You'll see that we've put a statement that will evaluate to true or false in the `sql` parameter. This is required for `yesno` dimensions.
-
-Read `type: yesno` documentation [here](https://looker.com/docs/reference/field-reference/dimension-type-reference#yesno).<br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=95MSkVN6ERioo0phGuor7J" target="_blank"><i class="fa fa-search"></i> Explore the <b>Is Complete</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#yesno" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: yesno</b> Docs</a><br /><br />
 
 #### Tier
 
-The `tier` type allows you to set various number ranges, then bucket data into those ranges. You can also choose what style will be used to display those ranges to users.
+The `tier` type allows you to set various ranges, then bucket number or integer data into those ranges. You can also choose what style will be used to display those ranges to users.
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/users.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">users</a> View File</a>
@@ -71,14 +62,13 @@ dimension: age_tier {
   sql: ${age} ;;
 }
 ```
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=2uOecXdCneJVI3ECLmtqeQ" target="_blank"><i class="fa fa-search"></i> Explore the <b>Age Tier</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#tier" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: tier</b> Docs</a><br /><br />
 
-You'll see that there are 2 new parameters required for `tier` dimensions. The `tiers` parameter defines the number ranges you're interested in. The `style` parameter defines how the tiers will be displayed to users; you can see the available styles [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#style).
-
-Read `type: tier` documentation [here](https://looker.com/docs/reference/field-reference/dimension-type-reference#tier).<br /><br />
+You'll see that there are 2 new parameters required for `tier` dimensions. The `tiers` parameter defines the number ranges you're interested in. The `style` parameter defines how the tiers will be displayed to users; you can see the available styles [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#style).<br /><br />
 
 #### Location
 
-The `location` type allows you to create a location field, based on a latitude and longitude. This is useful when you need to map things in Looker, or calculate distances between items.
+The `location` type allows you to create a location field, if you have a latitude and longitude available. This is useful when you need to map things in Looker, or calculate distances between items.
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/distribution_center.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">distribution_center</a> View File</a>
@@ -90,10 +80,9 @@ dimension: location {
   sql_longitude: ${longitude} ;;
 }
 ```
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/distribution_centers?qid=IIdOxpvWI8tqcOXrWJDDzC&toggle=vis" target="_blank"><i class="fa fa-search"></i> Explore the <b>Location</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#location" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: location</b> Docs</a><br /><br />
 
-You'll see that there are 2 new parameters required for `location` dimensions. The `sql_latitude` parameter defines the latitude of the location. The `sql_longitude` parameter defines the longitude of the location.
-
-Read `type: location` documentation [here](https://looker.com/docs/reference/field-reference/dimension-type-reference#location).<br /><br />
+You'll see that there are 2 new parameters required for `location` dimensions. The `sql_latitude` parameter defines the latitude of the location. The `sql_longitude` parameter defines the longitude of the location. These could be references to latitude and longitude fields (as in this example), or other SQL that extracts a latitutde and longitude.<br /><br />
 
 #### Distance
 
@@ -110,10 +99,9 @@ dimension: distance_from_distribution_center {
   units: miles
 }
 ```
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=rLtv5Q4dONlWcttSQtnL8d" target="_blank"><i class="fa fa-search"></i> Explore the <b>Distance from Distribution Center</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#distance" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: distance</b> Docs</a><br /><br />
 
-You'll see that there are 3 new parameters required for `distance` dimensions. The `start_location_field` parameter defines the first location. The `end_location_field` parameter defines the second location. The `units` field defines the distance units you'd like to be used; you can see the available units [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#distance).
-
-Read `type: distance` documentation [here](https://looker.com/docs/reference/field-reference/dimension-type-reference#distance).<br /><br />
+You'll see that there are 3 new parameters required for `distance` dimensions. The `start_location_field` parameter defines the first location. The `end_location_field` parameter defines the second location. The `units` field defines the distance units you'd like to be used; you can see the available units [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#distance).<br /><br />
 
 #### Zipcode
 
@@ -128,19 +116,18 @@ dimension: zip {
   sql: ${TABLE}.zipcode ;;
 }
 ```
-
-Read `type: zipcode` documentation [here](https://looker.com/docs/reference/field-reference/dimension-type-reference#zipcode).<br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=ttlB9Dh8Ox3yiMk0JsVfN4" target="_blank"><i class="fa fa-search"></i> Explore the <b>Zipcode</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#zipcode" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: zipcode</b> Docs</a><br /><br />
 
 
 
 ## Next Step
 
-Next, we'll look at examples of all the available dimension types.
+Next, we'll look at some additional dimension options that are commonly used.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/1_lookml_basics.md">&#10094; Dimension Basics</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/4_dimension_basics.md">&#10094; Dimension Basics</a>
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/3_dimension_types.md">Other Dimension Settings &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/6_dimension_options.md">Dimension Options &#10095;</a>
 </div>

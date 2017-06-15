@@ -15,6 +15,7 @@ Basic views are simple to define in LookML, and only require 1 or 2 parameters. 
 view: orders {
   sql_table_name: public.orders ;;
 ```
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders" target="_blank"><i class="fa fa-search"></i> Explore the <b>Orders</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/view-params/view" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>view</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/view-params/sql_table_name-for-view" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql_table_name</b> Docs</a><br /><br />
 
 If we break this down:
 
@@ -26,9 +27,7 @@ If we break this down:
 
   Also note that the row ends with `;;`. This is how Looker knows you're done writing the table name, and is the way all SQL-type parameters are ended in Looker.
 
-You'll notice there are a lot of other dimensions and measures within the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view, but we'll discuss those separately in our <a href="https://learn2.looker.com/projects/e-commerce/files/3_dimension_basics.md">dimension</a> and measures lessons.
-
-<span style="border:1px solid rgb(234,138,47);border-radius:5px;padding:5px;background-color:rgb(249,238,227);"><a style="color:rgb(234,138,47);font-size:12px;" href="https://learn2.looker.com/explore/e_commerce/orders" target="_blank"><i class="fa fa-search"></i> Explore the Orders View</a></span><br /><br /><br />
+You'll notice there are a lot of other dimensions and measures within the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view, but we'll discuss those separately in our <a href="https://learn2.looker.com/projects/e-commerce/files/4_dimension_basics.md">dimension</a> and <a href="https://learn2.looker.com/projects/e-commerce/files/8_measure_basics.md">measure</a> lessons.<br /><br />
 
 
 
@@ -40,7 +39,7 @@ All of the additional view level settings that you can apply in LookML can be fo
 
 ## Next Step
 
-Next, we'll look at creating your own database tables within Looker.
+Next, we'll look at creating your own database tables with Looker's derived table functionality.
 
 <div style="float:left;font-weight:bold;">
   <a href="https://learn2.looker.com/projects/e-commerce/files/1_lookml_basics.md">&#10094; LookML Basics</a>

@@ -60,7 +60,7 @@ view: users {
 
   dimension: full_name {
     type: string
-    sql: CONCAT(${first_name}, ' ', ${last_name}) ;;
+    sql: ${first_name} || ' ' || ${last_name} ;;
   }
 
   dimension: gender {
@@ -84,12 +84,12 @@ view: users {
     sql_longitude: ${longitude} ;;
   }
 
-  # dimension: distance_from_distribution_center {
-  #   type: distance
-  #   start_location_field: distribution_center.location
-  #   end_location_field: users.location
-  #   units: miles
-  # }
+  dimension: distance_from_distribution_center {
+    type: distance
+    start_location_field: distribution_centers.location
+    end_location_field: users.location
+    units: miles
+  }
 
   dimension: state {
     type: string
