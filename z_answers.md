@@ -1,4 +1,4 @@
-# "Try It Yourself" Answers
+<h1 style="color:rgb(100,81,138)">"Try It Yourself" Answers</h1>
 
 This page includes the answers to all of the **Try it Yourself** questions throughout this tutorial.<br /><br />
 
@@ -6,13 +6,13 @@ This page includes the answers to all of the **Try it Yourself** questions throu
 
 <a name="dimension-basics"></a>
 
-### Dimension Basics
+<h2 style="color:rgb(100,81,138)">Dimension Basics</h2>
 
-*Question*
+<h4 style="color:rgb(141,127,185)">Question</h4>
 
 The `orders` table in our dataset has a column called `traffic_source` that hasn't yet been added in LookML. Try adding it using the information you've learned.
 
-*Answer*
+<h4 style="color:rgb(141,127,185)">Answer</h4>
 
 Add the following dimension to the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view file:
 
@@ -23,7 +23,7 @@ dimension: traffic_source {
 }
 ```
 
-*Try It*
+<h4 style="color:rgb(141,127,185)">Double Check</h4>
 
 After adding this dimension, [explore the orders view](https://learn2.looker.com/explore/e_commerce/orders) to see it in action.<br /><br />
 
@@ -31,13 +31,13 @@ After adding this dimension, [explore the orders view](https://learn2.looker.com
 
 <a name="dimension-basics"></a>
 
-### Measure Basics
+<h2 style="color:rgb(100,81,138)">Measure Basics</h2>
 
-*Question*
+<h4 style="color:rgb(141,127,185)">Question</h4>
 
 The `products` view has a dimension called `retail_price`. Try adding a `total_retail_price` measure that adds up the total price.
 
-*Answer*
+<h4 style="color:rgb(141,127,185)">Answer</h4>
 
 Add the following dimension to the <a href="https://learn2.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view file:
 
@@ -48,7 +48,7 @@ dimension: total_retail_price {
 }
 ```
 
-*Try It*
+<h4 style="color:rgb(141,127,185)">Double Check</h4>
 
 After adding this dimension, [explore the products view](https://learn2.looker.com/explore/e_commerce/products) to see it in action.<br /><br />
 
@@ -56,13 +56,13 @@ After adding this dimension, [explore the products view](https://learn2.looker.c
 
 <a name="explore-basics"></a>
 
-### Explore Basics
+<h2 style="color:rgb(100,81,138)">Explore Basics</h2>
 
-*Question*
+<h4 style="color:rgb(141,127,185)">Question</h4>
 
 Try adding as many joins as possible to the `products` explore.
 
-*Answer*
+<h4 style="color:rgb(141,127,185)">Answer</h4>
 
 Add the following joins to the `products` explore in the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file:
 
@@ -71,7 +71,7 @@ explore: products {
   join: inventory_items {
     sql_on: ${inventory_items.product_id} = ${products.id} ;;
     type: left_outer
-    relationship: many_to_one
+    relationship: one_to_many
   }
 
   join:  distribution_centers {
@@ -106,6 +106,6 @@ explore: products {
 }
 ```
 
-*Try It*
+<h4 style="color:rgb(141,127,185)">Double Check</h4>
 
 After adding these joins, [explore the products explore](https://learn2.looker.com/explore/e_commerce/products) to see it in action.

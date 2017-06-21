@@ -7,14 +7,14 @@ view: distribution_centers {
     sql: ${TABLE}.id ;;
   }
 
-  dimension: latitude {
-    type: number
-    sql: ${TABLE}.latitude ;;
-  }
-
   dimension: longitude {
     type: number
     sql: ${TABLE}.longitude ;;
+  }
+
+  dimension: latitude {
+    type: number
+    sql: ${TABLE}.latitude ;;
   }
 
   dimension: location {
@@ -26,10 +26,5 @@ view: distribution_centers {
   dimension: name {
     type: string
     sql: ${TABLE}.name ;;
-  }
-
-  measure: count {
-    type: count
-    drill_fields: [id, name, products.count]
   }
 }

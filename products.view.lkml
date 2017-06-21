@@ -7,6 +7,34 @@ view: products {
     sql: ${TABLE}.id ;;
   }
 
+  dimension: distribution_center_id {
+    type: number
+    hidden: yes
+    sql: ${TABLE}.distribution_center_id ;;
+  }
+
+  dimension: cost {
+    type: number
+    sql: ${TABLE}.cost ;;
+    value_format: "$0.00"
+  }
+
+  dimension: retail_price {
+    type: number
+    sql: ${TABLE}.retail_price ;;
+    value_format_name: usd
+  }
+
+  dimension: sku {
+    type: string
+    sql: ${TABLE}.sku ;;
+  }
+
+  dimension: department {
+    type: string
+    sql: ${TABLE}.department ;;
+  }
+
   dimension: brand {
     type: string
     sql: ${TABLE}.brand ;;
@@ -17,50 +45,33 @@ view: products {
     }
   }
 
-  dimension: category {
-    type: string
-    sql: ${TABLE}.category ;;
-  }
-
-  dimension: cost {
-    type: number
-    sql: ${TABLE}.cost ;;
-    value_format: "$0.00"
-  }
-
-  dimension: department {
-    type: string
-    sql: ${TABLE}.department ;;
-  }
-
-  dimension: distribution_center_id {
-    type: number
-    # hidden: yes
-    sql: ${TABLE}.distribution_center_id ;;
-  }
-
   dimension: name {
     type: string
     sql: ${TABLE}.name ;;
   }
 
-  dimension: retail_price {
-    type: number
-    sql: ${TABLE}.retail_price ;;
-  }
-
-  dimension: sku {
+  dimension: category {
     type: string
-    sql: ${TABLE}.sku ;;
+    sql: ${TABLE}.category ;;
   }
 
   measure: total_cost {
     type: sum
     sql: ${cost} ;;
+    value_format_name: usd
   }
 
   measure: count {
     type: count
-    drill_fields: [id, name, distribution_centers.id, distribution_centers.name, inventory_items.count]
+    drill_fields: [
+      id,
+      cost,
+      retail_price,
+      sku,
+      department,
+      brand,
+      name,
+      category
+    ]
   }
 }

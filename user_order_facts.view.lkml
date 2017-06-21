@@ -16,6 +16,7 @@ view: user_order_facts {
     type: number
     sql: ${TABLE}.user_id ;;
     primary_key: yes
+    hidden: yes
   }
 
   dimension: first_order_date {

@@ -7,6 +7,18 @@ view: order_items {
     sql: ${TABLE}.id ;;
   }
 
+  dimension: order_id {
+    type: number
+    hidden: yes
+    sql: ${TABLE}.order_id ;;
+  }
+
+  dimension: inventory_item_id {
+    type: number
+    hidden: yes
+    sql: ${TABLE}.inventory_item_id ;;
+  }
+
   dimension_group: created {
     type: time
     timeframes: [
@@ -21,6 +33,20 @@ view: order_items {
     sql: ${TABLE}.created_at ;;
   }
 
+  dimension_group: shipped {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.shipped_at ;;
+  }
+
   dimension_group: delivered {
     type: time
     timeframes: [
@@ -33,17 +59,6 @@ view: order_items {
       year
     ]
     sql: ${TABLE}.delivered_at ;;
-  }
-
-  dimension: inventory_item_id {
-    type: number
-    # hidden: yes
-    sql: ${TABLE}.inventory_item_id ;;
-  }
-
-  dimension: order_id {
-    type: number
-    sql: ${TABLE}.order_id ;;
   }
 
   dimension_group: returned {
@@ -84,34 +99,23 @@ view: order_items {
     }
   }
 
-  dimension_group: shipped {
-    type: time
-    timeframes: [
-      raw,
-      time,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    sql: ${TABLE}.shipped_at ;;
-  }
-
   dimension: status {
     type: string
     sql: ${TABLE}.status ;;
   }
 
-  dimension: user_id {
-    type: number
-    # hidden: yes
-    sql: ${TABLE}.user_id ;;
-  }
-
   measure: count {
     type: count
-    drill_fields: [detail*]
+    drill_fields: [
+      id,
+      created_time,
+      shipped_time,
+      delivered_time,
+      returned_time,
+      sale_price,
+      status,
+      products.name
+    ]
   }
 
   measure: total_sale_price {
@@ -137,17 +141,5 @@ view: order_items {
   measure: most_expensive_item {
     type: max
     sql: ${sale_price} ;;
-  }
-
-  # ----- Sets of fields for drilling ------
-  set: detail {
-    fields: [
-      id,
-      inventory_items.id,
-      inventory_items.product_name,
-      users.id,
-      users.last_name,
-      users.first_name
-    ]
   }
 }

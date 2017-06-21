@@ -1,10 +1,10 @@
-# Views
+<h1 style="color:rgb(100,81,138)">View Basics</h1>
 
 As mentioned in the [LookML Basics](https://learn2.looker.com/projects/e-commerce/files/1_lookml_basics.md) lesson, a **view** in Looker corresponds to a table in your database. You can also create your own database tables with Looker, and turn that into a view, but we'll cover that feature in the [next lesson](https://learn2.looker.com/projects/e-commerce/files/3_derived_tables.md).<br /><br />
 
 
 
-## Anatomy of a Basic View
+<h2 style="color:rgb(100,81,138)">Anatomy of a Basic View</h2>
 
 Basic views are simple to define in LookML, and only require 1 or 2 parameters. For example, the top of the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view file looks like this:
 
@@ -31,13 +31,13 @@ You'll notice there are a lot of other dimensions and measures within the <a hre
 
 
 
-## Other View Settings
+<h2 style="color:rgb(100,81,138)">Other View Settings</h2>
 
 All of the additional view level settings that you can apply in LookML can be found on our [View Parameters](https://looker.com/docs/reference/view-reference) docs page.<br /><br />
 
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 Next, we'll look at creating your own database tables with Looker's derived table functionality.
 
@@ -46,5 +46,5 @@ Next, we'll look at creating your own database tables with Looker's derived tabl
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/3_derived_tables.md">Dimension Basics &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/3_derived_tables.md">Derived Tables &#10095;</a>
 </div>

@@ -1,4 +1,4 @@
-# Derived Tables
+<h1 style="color:rgb(100,81,138)">Derived Tables</h1>
 
 If you need to, you can create database tables using Looker's "derived tables" feature, which you can read about in more detail in our [Derived Tables](https://looker.com/docs/data-modeling/learning-lookml/derived-tables) documentation.
 
@@ -16,7 +16,7 @@ You might also want to use derived tables to improve query performance, which <i
 
 
 
-## Anatomy of a Derived Table
+<h2 style="color:rgb(100,81,138)">Anatomy of a Derived Table</h2>
 
 Derived tables only require you to specify their SQL. For example, the top of the <a href="https://learn2.looker.com/projects/e-commerce/files/user_order_facts.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">user_order_facts</a> view file looks like this:
 
@@ -54,19 +54,19 @@ You’ll notice there are a couple other dimensions within the user_order_facts 
 
 
 
-## Understanding Persistence
+<h2 style="color:rgb(100,81,138)">Understanding Persistence</h2>
 
 In the example above, we saw one option for setting persistence: `persist_for: "24 hours"`. However, there are other persistence options available. It's also important to understand some of the details about how persistence works and the impact that it can have. Please read our [Derived Tables](https://looker.com/docs/data-modeling/learning-lookml/derived-tables#adding_persistence) documentation to fully understand this feature.<br /><br />
 
 
 
-## Other Derived Table Settings
+<h2 style="color:rgb(100,81,138)">Other Derived Table Settings</h2>
 
 All of the additional derived tables settings that you can apply in LookML can be found on our [View Parameters](https://looker.com/docs/reference/view-reference) docs page.<br /><br />
 
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 Next, we'll look at the basics of dimensions.
 

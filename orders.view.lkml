@@ -7,6 +7,12 @@ view: orders {
     sql: ${TABLE}.id ;;
   }
 
+  dimension: user_id {
+    type: number
+    hidden: yes
+    sql: ${TABLE}.user_id ;;
+  }
+
   dimension_group: created {
     type: time
     datatype: datetime
@@ -30,12 +36,6 @@ view: orders {
   dimension: is_complete {
     type: yesno
     sql: ${status} = 'complete' ;;
-  }
-
-  dimension: user_id {
-    type: number
-    # hidden: yes
-    sql: ${TABLE}.user_id ;;
   }
 
   measure: count {

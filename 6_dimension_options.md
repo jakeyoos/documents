@@ -1,8 +1,8 @@
-# Dimension Options
+<h1 style="color:rgb(100,81,138)">Dimension Options</h1>
 
 Dimensions have many other options that you can take advantage of. They are all documented on our [Field Parameters](https://looker.com/docs/reference/field-reference) doc, but we'll go over some of the most used options here.<br /><br />
 
-#### primary_key
+<h4 style="color:rgb(141,127,185)">primary_key</h4>
 
 The `primary_key` parameter defines which dimension represents the primary key of a view. Defining a primary key is very important in LookML modeling, because it allows Looker to avoid double counting errors, which we discuss more in the [explore basics lesson](https://learn2.looker.com/projects/e-commerce/files/12_explore_basics.md).
 
@@ -18,7 +18,7 @@ dimension: id {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=C812bAP7NtykDkbk0WV0Jy" target="_blank"><i class="fa fa-search"></i> Explore the <b>ID</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-params/primary_key" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>primary_key</b> Docs</a><br /><br />
 
-#### link
+<h4 style="color:rgb(141,127,185)">link</h4>
 
 The `link` parameter allows you to create links to other URLs that are related to your data. You specify a `label` that users will see, a `url` that the link should go to, and optionally a `icon_url` to an icon image that users will see. Users click on the ellipses icon next to the data to reveal the link.
 
@@ -40,7 +40,7 @@ dimension: brand {
 
 You can insert dynamic values into the URL by using the liquid templating language, which is documented on our [html](https://looker.com/docs/reference/field-params/html#liquid_variables) parameter docs page.<br /><br />
 
-#### case
+<h4 style="color:rgb(141,127,185)">case</h4>
 
 The `case` parameter allows you to specify several SQL conditions, and the value that will appear to users if the condition is satisfied. This is similar to the SQL `CASE WHEN` function.
 
@@ -70,7 +70,7 @@ dimension: price_range {
 
 The conditions are evaluated in the order that you write them. As soon as one condition evalutes to true that label is assigned to that row of data.<br /><br />
 
-#### value_format_name and value_format
+<h4 style="color:rgb(141,127,185)">value_format_name and value_format</h4>
 
 The `value_format_name` and `value_format` parameters allow you to easily format dimensions for your users.
 
@@ -104,7 +104,7 @@ dimension: cost {
 
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 Next we'll look at dimension groups, which help deal with time based information efficiently.
 

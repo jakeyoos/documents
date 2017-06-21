@@ -1,18 +1,16 @@
-# LookML Basics
+<h1 style="color:rgb(100,81,138)">LookML Basics</h1>
 
 Welcome to our e-commerce tutorial. Unlike the [Name Game](https://learn2.looker.com/projects/name_game/files/lesson_1_text.md), this tutorial goes into considerbally more detail about how to develop in LookML. Since LookML has so many options, this tutorial won't cover every possible detail, but it will cover enough to address the most common use cases.
 
-The data set we're working with here is sales data from an e-commerce clothing store. It has a few, relatively straightforward data tables:
+The data set we're working with here is sales data from an e-commerce clothing store. It has a few, relatively straightforward data tables. Some of the information and join relationships in this schema are redundant, so we've marked those in grey.
 
-<div style="border:1px solid black;padding:10px;text-align:center;">
-ERD Diagram of the_look
-</div><br />
+<img src="https://looker.com/assets/docs/images/learn-the-look-erd.png">
 
 As mentioned in the intro, you should have a basic comfort level with SQL in order to get the most out of this tutorial and Looker.<br /><br />
 
 
 
-## The Fundamental LookML Structures
+<h2 style="color:rgb(100,81,138)">The Fundamental LookML Structures</h2>
 
 There are a few fundamental structures from which you'll build almost everything in LookML:
 
@@ -34,7 +32,7 @@ There are a few fundamental structures from which you'll build almost everything
 
 
 
-## Where are These Structures Defined?
+<h2 style="color:rgb(100,81,138)">Where are These Structures Defined?</h2>
 
 **Fields** live inside of views.
 
@@ -46,7 +44,7 @@ There are a few fundamental structures from which you'll build almost everything
 
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 Let's start by looking at the basics of views.
 

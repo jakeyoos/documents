@@ -1,8 +1,8 @@
-# Measure Options
+<h1 style="color:rgb(100,81,138)">Measure Options</h1>
 
 Measures have many other options that you can take advantage of. They are all documented on our [Field Parameters](https://looker.com/docs/reference/field-reference) doc, but we'll go over some of the most used options here.<br /><br />
 
-#### drill_fields
+<h4 style="color:rgb(141,127,185)">drill_fields</h4>
 
 In Looker, when a user clicks on a measure, there is an option to show all of the records that comprise that measure. This is called "drilling", and it's easiest to understand with counts. For example, if a measure showed a count of 20 orders, the user could click on it to see information listed about each of those 20 orders. In theory you can also enable this feature for non-count measures, but it's not as obvious what's happening. For example, if a user clicked on a total of $1,000 in sales, the drill would show the orders that comprised those sales.
 
@@ -21,7 +21,7 @@ measure: count {
 
 The `drill_fields` parameter can also be used on dimensions, but has a slightly different effect. You can also read about that in the [drill_fields documentation](https://looker.com/docs/reference/field-params/drill_fields#drilling_into_dimensions).<br /><br />
 
-#### filters
+<h4 style="color:rgb(141,127,185)">filters</h4>
 
 Another very useful feature of measures is to filter them. While you can of course apply filters on the Explore page, those filters will get applied to *everything*, whereas this feature allows you to filter *only* a specific measure. For example, our <a href="https://learn2.looker.com/projects/e-commerce/files/users.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">users</a> view has a regular count, but we can also create a count of only women:
 
@@ -44,7 +44,7 @@ The `filters` parameter works by first specifying the dimension you want to filt
 
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 With a solid grasp of views and the fields that live within them, we can now move onto understanding model files and how to link views together.
 

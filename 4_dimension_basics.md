@@ -1,4 +1,4 @@
-# Dimension Basics
+<h1 style="color:rgb(100,81,138)">Dimension Basics</h1>
 
 In the same way that a **view** is similar to a SQL table, a **dimension** is similar to a SQL column. However, there are a few nuances to keep in mind.
 
@@ -8,7 +8,7 @@ Second, dimensions are the options your users will use to group their data. This
 
 
 
-## Anatomy of a Basic Dimension
+<h2 style="color:rgb(100,81,138)">Anatomy of a Basic Dimension</h2>
 
 All dimensions need at least a name, a type, and a SQL definition.  For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/users.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">users</a> view file has a dimension called `first_name` inside of it:
 
@@ -37,7 +37,7 @@ If we break this down:
 
 
 
-## References in the sql Parameter
+<h2 style="color:rgb(100,81,138)">References in the sql Parameter</h2>
 
 When you're writing your `sql` parameters, it's important to know about the three types of references you can make:
 
@@ -51,7 +51,7 @@ Pattern | Examples | Definition
 
 
 
-## More Complicated Dimensions
+<h2 style="color:rgb(100,81,138)">More Complicated Dimensions</h2>
 
 Just to see a quick example of the different types of references you can use in the `sql` parameter, and to show a slightly more complicated dimension, take a look at this section from the <a href="https://learn2.looker.com/projects/e-commerce/files/users.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">users</a> view file:
 
@@ -80,7 +80,7 @@ Notice that the first name and last name dimensions above use the `${TABLE}.fiel
 
 
 
-## Try it Yourself
+<h2 style="color:rgb(100,81,138)">Try it Yourself</h2>
 
 The `orders` table in our dataset has a column called `traffic_source` that hasn't yet been added in LookML. Try adding it using the information you've learned.
 
@@ -88,12 +88,12 @@ The `orders` table in our dataset has a column called `traffic_source` that hasn
 
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 Next, we'll look at examples of all the available dimension types.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/1_lookml_basics.md">&#10094; LookML Basics</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/3_derived_tables.md">&#10094; Derived Tables</a>
 </div>
 
 <div style="float:right;font-weight:bold;">

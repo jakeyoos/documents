@@ -1,4 +1,4 @@
-# Model Basics
+<h1 style="color:rgb(100,81,138)">Model Basics</h1>
 
 In LookML, the primary function of a **model** is to house **explores**, and to define certain high-level settings such as what database connection should be used. We'll talk about explores in the next lesson, and focus on the model-level settings here.
 
@@ -6,7 +6,7 @@ Unlike the LookML items you've seen so far, there is no parameter to create a mo
 
 
 
-## Anatomy of a Model
+<h2 style="color:rgb(100,81,138)">Anatomy of a Model</h2>
 
 You'll see that the top of our <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file looks like this:
 
@@ -29,13 +29,13 @@ You’ll notice there are a lot of explores defined within the model, but we’l
 
 
 
-## Other Model Settings
+<h2 style="color:rgb(100,81,138)">Other Model Settings</h2>
 
 All of the additional model level settings that you can apply in LookML can be found on our [Model Parameters](https://looker.com/docs/reference/model-reference) docs page.<br /><br />
 
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 Next, we'll look at creating explores, which make models useful.
 

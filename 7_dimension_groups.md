@@ -1,4 +1,4 @@
-# Dimension Groups
+<h1 style="color:rgb(100,81,138)">Dimension Groups</h1>
 
 Dimension groups allow you to create multiple time-based dimensions at the same time, based on a time column in your database. Currently, there are no other use of dimension groups.
 
@@ -6,7 +6,7 @@ It is possible to create individual time-based dimensions, though the normal pat
 
 
 
-## Anatomy of a Dimension Group
+<h2 style="color:rgb(100,81,138)">Anatomy of a Dimension Group</h2>
 
 All dimension groups require a type of time, the list of timeframes to be generated, and a SQL definition.  Dimension groups assume you're providing a datetime, but if you have another type of time information, you can specify that with the `datatype` parameter.
 
@@ -49,7 +49,7 @@ If we break this down:
 
 
 
-## Dimension Group Referencing and Naming
+<h2 style="color:rgb(100,81,138)">Dimension Group Referencing and Naming</h2>
 
 Dimension groups create a set of dimensions all at once. They are named by combining the dimension group name and the timeframe. For example, in the "created" dimension group above, the following dimensions would be created:
 
@@ -65,7 +65,7 @@ If you wanted to reference these dimensions, you would need to use `${created_ti
 
 
 
-## Creating Individual Time Dimensions
+<h2 style="color:rgb(100,81,138)">Creating Individual Time Dimensions</h2>
 
 You can create individual, time-based dimensions if you like. You'll just need to know the `type:` that you want to use, which you'll find listed on our [Dimension and Filter Types](https://looker.com/docs/reference/field-reference/dimension-type-reference#individual_time_and_date_types) docs page. All of the individual time based types start with `date_`. For example:
 
@@ -79,7 +79,7 @@ dimension: created_week {
 <br />
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 Now that you have a grasp of dimensions and dimension groups, it's time to look at their sibling: measures.
 

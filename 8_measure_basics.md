@@ -1,10 +1,10 @@
-# Measure Basics
+<h1 style="color:rgb(100,81,138)">Measure Basics</h1>
 
 Measures in Looker represent aggregate calculations (i.e. multi-row calculations) like `SUM`, `COUNT`, and `MAX`. They provide information about the groups of data your users have selected with dimensions.<br /><br />
 
 
 
-## Anatomy of a Basic Measure
+<h2 style="color:rgb(100,81,138)">Anatomy of a Basic Measure</h2>
 
 All measures need at least a name, a type, and most of the time a SQL definition.  For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> view file has a measure called `total_sale_price` inside of it:
 
@@ -31,7 +31,7 @@ If we break this down:
 
 
 
-## Try it Yourself
+<h2 style="color:rgb(100,81,138)">Try it Yourself</h2>
 
 The <a href="https://learn2.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view has a dimension called `retail_price`. Try adding a `total_retail_price` measure that adds up the total price.
 
@@ -39,7 +39,7 @@ The <a href="https://learn2.looker.com/projects/e-commerce/files/products.view.l
 
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 Next, we'll look at examples of most of the available measure types.
 

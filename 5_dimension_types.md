@@ -1,8 +1,8 @@
-# Dimension Types
+<h1 style="color:rgb(100,81,138)">Dimension Types</h1>
 
 Dimensions can have many different types. In this lesson we'll look at examples of all these types and briefly talk about when to use them. For more complete documentation about types, check out our [Dimension and Filter Types](https://looker.com/docs/reference/field-reference/dimension-type-reference) page.<br /><br />
 
-#### String
+<h4 style="color:rgb(141,127,185)">String</h4>
 
 The `string` type should be used with data that includes words or letters. It is the default dimension type.
 
@@ -17,7 +17,7 @@ dimension: first_name {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=WFTdUVRhnxmOQmJwZ2wAso" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a><br /><br />
 
-#### Number
+<h4 style="color:rgb(141,127,185)">Number</h4>
 
 The `number` type should be used with number or integer data.
 
@@ -32,7 +32,7 @@ dimension: sale_price {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=N3Ra8idDQbiCqSaEfRA1w8" target="_blank"><i class="fa fa-search"></i> Explore the <b>Sale Price</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#number" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: number</b> Docs</a><br /><br />
 
-#### YesNo
+<h4 style="color:rgb(141,127,185)">YesNo</h4>
 
 The `yesno` type allows you to set a condition, then the field will return "Yes" if that condition is true, and "No" if it is not true.
 
@@ -47,7 +47,7 @@ dimension: is_complete {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=95MSkVN6ERioo0phGuor7J" target="_blank"><i class="fa fa-search"></i> Explore the <b>Is Complete</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#yesno" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: yesno</b> Docs</a><br /><br />
 
-#### Tier
+<h4 style="color:rgb(141,127,185)">Tier</h4>
 
 The `tier` type allows you to set various ranges, then bucket number or integer data into those ranges. You can also choose what style will be used to display those ranges to users.
 
@@ -66,7 +66,7 @@ dimension: age_tier {
 
 You'll see that there are 2 new parameters required for `tier` dimensions. The `tiers` parameter defines the number ranges you're interested in. The `style` parameter defines how the tiers will be displayed to users; you can see the available styles [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#style).<br /><br />
 
-#### Location
+<h4 style="color:rgb(141,127,185)">Location</h4>
 
 The `location` type allows you to create a location field, if you have a latitude and longitude available. This is useful when you need to map things in Looker, or calculate distances between items.
 
@@ -84,7 +84,7 @@ dimension: location {
 
 You'll see that there are 2 new parameters required for `location` dimensions. The `sql_latitude` parameter defines the latitude of the location. The `sql_longitude` parameter defines the longitude of the location. These could be references to latitude and longitude fields (as in this example), or other SQL that extracts a latitutde and longitude.<br /><br />
 
-#### Distance
+<h4 style="color:rgb(141,127,185)">Distance</h4>
 
 The `distance` type allows you to calculate the distance between two `type: location` dimensions.
 
@@ -103,7 +103,7 @@ dimension: distance_from_distribution_center {
 
 You'll see that there are 3 new parameters required for `distance` dimensions. The `start_location_field` parameter defines the first location. The `end_location_field` parameter defines the second location. The `units` field defines the distance units you'd like to be used; you can see the available units [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#distance).<br /><br />
 
-#### Zipcode
+<h4 style="color:rgb(141,127,185)">Zipcode</h4>
 
 The `zipcode` type should be used with 5 digit, US zipcode data.
 
@@ -120,7 +120,7 @@ dimension: zip {
 
 
 
-## Next Step
+<h2 style="color:rgb(100,81,138)">Next Step</h2>
 
 Next, we'll look at some additional dimension options that are commonly used.
 

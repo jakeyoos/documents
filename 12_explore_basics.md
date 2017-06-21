@@ -1,10 +1,10 @@
-# Explore Basics
+<h1 style="color:rgb(100,81,138)">Explore Basics</h1>
 
 An **explore** is how you expose a **view** into the Explore menu. However, it is also used to combine together multiple views, which is critical for unlocking the full power of Looker.<br /><br />
 
 
 
-## Anatomy of a Basic Explore
+<h2 style="color:rgb(100,81,138)">Anatomy of a Basic Explore</h2>
 
 Although it is possible to give explores arbitrary names by using the correct set of LookML parameters, typically you'll name an explore with the name of a view. For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file has an explore called `product` inside of it:
 
@@ -19,7 +19,7 @@ We've defined a view called "products" in the <a href="https://learn2.looker.com
 
 
 
-## Joining Multiple Views in the Same Explore
+<h2 style="color:rgb(100,81,138)">Joining Multiple Views in the Same Explore</h2>
 
 As we've seen, views are similar to SQL tables. Just as you can join tables together in SQL, you can join views together within an explore. Let's look at the more complex and more typical "order_items" explore:
 
@@ -55,11 +55,11 @@ explore: order_items {
   join: products {
     sql_on: ${products.id} = ${inventory_items.product_id} ;;
     type: left_outer
-    relationship: one_to_many
+    relationship: many_to_one
   }
 
   join:  distribution_centers {
-    sql_on: ${distribution_centers.id} = ${inventory_items.product_distribution_center_id} ;;
+    sql_on: ${distribution_centers.id} = ${inventory_items.distribution_center_id} ;;
     type: left_outer
     relationship: many_to_one
   }
@@ -105,7 +105,7 @@ ON distribution_centers.id = inventory_items.product_distribution_center_id
 
 <br />
 
-#### Properly Defining the Relationship
+<h4 style="color:rgb(141,127,185)">Properly Defining the Relationship</h4>
 
 Properly defining the `relationship` parameter in Looker is critical to the proper functioning of your model. If you properly define the relationships, Looker can prevent the problems of fanouts and double-counting. If you're not familiar with "fanouts", you can read about them in [this blog post](https://looker.com/blog/aggregate-functions-gone-bad-and-the-joins-who-made-them-that-way).
 
@@ -117,7 +117,7 @@ As mentioned in the [dimension options lesson](https://learn2.looker.com/project
 
 
 
-## Try it Yourself
+<h2 style="color:rgb(100,81,138)">Try it Yourself</h2>
 
 Try adding as many joins as possible to the `products` explore.
 
@@ -125,7 +125,7 @@ Try adding as many joins as possible to the `products` explore.
 
 
 
-## You're Finished!
+<h2 style="color:rgb(100,81,138)">You're Finished!</h2>
 
 We're working on additional lessons that cover more advanced features and use cases. Until then, we hope these lessons were helpful to you. Please feel free to continue playing around with this dataset and LookML model to expand your understanding of Looker.
 
