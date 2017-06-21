@@ -6,7 +6,7 @@ An **explore** is how you expose a **view** into the Explore menu. However, it i
 
 ## Anatomy of a Basic Explore
 
-Although you can give explores arbitrary names by using the correct set of LookML parameters, usually you need to name an explore with the name of a view. For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file has an explore called `product` inside of it:
+Although it is possible to give explores arbitrary names by using the correct set of LookML parameters, typically you'll name an explore with the name of a view. For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file has an explore called `product` inside of it:
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> Model File</a>
@@ -21,7 +21,7 @@ We've defined a view called "products" in the <a href="https://learn2.looker.com
 
 ## Joining Multiple Views in the Same Explore
 
-As we've seen, views are similar to SQL tables. Just as you can join tables together in SQL, you can join views together within an explore. Let's look at the more complex and more typical explore "order_items" explore:
+As we've seen, views are similar to SQL tables. Just as you can join tables together in SQL, you can join views together within an explore. Let's look at the more complex and more typical "order_items" explore:
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> Model File</a>
@@ -55,16 +55,17 @@ explore: order_items {
   join: products {
     sql_on: ${products.id} = ${inventory_items.product_id} ;;
     type: left_outer
-    relationship: many_to_one
+    relationship: one_to_many
   }
 
   join:  distribution_centers {
-    sql_on: ${distribution_centers.id} = ${products.distribution_center_id} ;;
+    sql_on: ${distribution_centers.id} = ${inventory_items.product_distribution_center_id} ;;
     type: left_outer
     relationship: many_to_one
   }
 }
 ```
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items"><i class="fa fa-search"></i> Explore the <b>Order Items</b> Explore</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/explore-params/explore" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>explore</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/explore-params/join" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>join</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/explore-params/sql_on" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql_on</b> Docs</a><br /><a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/explore-params/type-for-join" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/explore-params/relationship" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>relationship</b> Docs</a><br /><br />
 
 To break down just the first few rows:
 
@@ -72,15 +73,15 @@ To break down just the first few rows:
 
 + The second row `join: orders {` joins the `orders` view into the `order_items` view
 
-+ The third row `sql_on: ${orders.id} = ${order_items.order_id} ;;` established the join condition between the `order_items` and `orders` view. Notice we can use the `${view_name.field_name}` references that we learned about in the dimensions lesson.
++ The third row `sql_on: ${orders.id} = ${order_items.order_id} ;;` establishes the join condition between the `order_items` and `orders` view. Notice we can use the `${view_name.field_name}` references that we learned about in the [dimensions lesson](https://learn2.looker.com/projects/e-commerce/files/4_dimension_basics.md).
 
-+ The fourth row `type: left_outer` defines the join as a `LEFT JOIN`. The `left_outer` value is the default value, so this row could be excluded if you like. Using a `LEFT JOIN` is *almost* always the right decision, because it allows users to see all the data from `order_items`, even if there is no corresponding data in the joined views.
++ The fourth row `type: left_outer` defines the join as a `LEFT JOIN`. The `left_outer` value is the default value, so this row could have been excluded. Using a `LEFT JOIN` is *almost* always the correct decision, because it allows users to see all the data from `order_items`, even if there is no corresponding data in the joined views.
 
 + The fourth row `relationship: many_to_one` establishes the relationship between the joined views. In this case we're saying there are potentially many order items for one order.
 
 + The last row `}` closes the join.
 
-The other joins work in the same way. If you use SQL a lot, it might be helpful for you to see how the LookML above would be translated into SQL. The corresponding SQL would be:
+The other joins work in the same way. If you use SQL a lot, it might be helpful for you to see how the LookML above would be translated into SQL:
 
 ```
 SELECT ...
@@ -99,37 +100,35 @@ LEFT JOIN products
 ON products.id = inventory_items.product_id
 
 LEFT JOIN distribution_centers
-ON distribution_centers.id = products.distribution_center_id
+ON distribution_centers.id = inventory_items.product_distribution_center_id
 ```
+
+<br />
 
 #### Properly Defining the Relationship
 
-Properly defining the `relationship` parameter in Looker is critical to the proper functioning of your model. If you properly define the relationships, Looker can prevent the problems of fanouts and double-counting certain records. If you're not familiar with "fanouts", you can read about them in [this blog post](https://looker.com/blog/aggregate-functions-gone-bad-and-the-joins-who-made-them-that-way).
+Properly defining the `relationship` parameter in Looker is critical to the proper functioning of your model. If you properly define the relationships, Looker can prevent the problems of fanouts and double-counting. If you're not familiar with "fanouts", you can read about them in [this blog post](https://looker.com/blog/aggregate-functions-gone-bad-and-the-joins-who-made-them-that-way).
 
 When a view is joined directly to an explore, like the `orders` view in the example above, the relationship is *from* the explore *to* the joined view. We're saying here that there could be many order items for one order.
 
 When a view is joined to an explore through another view - such as how `users` joins through `orders` to `order_items` in this example - the relationship being defined is from the intermediate view (`orders`) to the final view (`users`). In this example we're saying there could be many orders for one user.
 
-As mentioned in the dimension options lesson, another critical step to keeping things functioning properly is to define a primary key for each view.<br /><br />
+As mentioned in the [dimension options lesson](https://learn2.looker.com/projects/e-commerce/files/6_dimension_options.md), another critical step to keeping things functioning properly is to define a primary key for each view.<br /><br />
 
 
 
 ## Try it Yourself
 
-Try creating an explore that starts from `users`, and join as many views to it as possible.
+Try adding as many joins as possible to the `products` explore.
 
-[See the Answer](https://learn2.looker.com/projects/e-commerce/files/z_answers.md#dimension-basics)<br /><br />
+<a href="https://learn2.looker.com/projects/e-commerce/files/z_answers.md#explore-basics" style="color:rgb(234,138,47);font-size:12px;"><i class="fa fa-check-square-o"></i> See the Answer</a><br /><br />
 
 
 
-## Next Step
+## You're Finished!
 
-Next, we'll look at examples of all the available dimension types.
+We're working on additional lessons that cover more advanced features and use cases. Until then, we hope these lessons were helpful to you. Please feel free to continue playing around with this dataset and LookML model to expand your understanding of Looker.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/1_lookml_basics.md">&#10094; LookML Basics</a>
-</div>
-
-<div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/3_dimension_types.md">Dimension Types &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/11_model_basics.md">&#10094; Model Basics</a>
 </div>

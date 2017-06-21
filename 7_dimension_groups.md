@@ -31,6 +31,7 @@ dimension_group: created {
   sql: ${TABLE}.created_at ;;
 }
 ```
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=3p4HPhJyr3HYuEEkdN1Bar" target="_blank"><i class="fa fa-search"></i> Explore All of the Created Time Dimensions</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-params/dimension_group" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>dimension_group</b> Docs</a><br /><br />
 
 If we break this down:
 
@@ -40,7 +41,7 @@ If we break this down:
 
 + The third row `datatype: datetime` specifies what type of time information you'll be providing in the `sql` parameter. All of the supported data types are listed on the <a href="https://looker.com/docs/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page. In this case this row could be omitted, since "datetime" is the default value.
 
-+ The fourth row `timeframes: [` starts a list of timeframes that we want to be generated. All of the possible timeframes are defined on our <a href="https://looker.com/docs/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page.
++ The fourth row `timeframes: [` starts a list of timeframes that you want to be generated. All of the possible timeframes are defined on our <a href="https://looker.com/docs/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page.
 
 + The thirteenth row `sql: ${TABLE}.created_at ;;` defines the underlying time information that should be used.
 
@@ -50,7 +51,7 @@ If we break this down:
 
 ## Dimension Group Referencing and Naming
 
-Dimension groups create a set of dimensions that are named by combining the dimension group name and the timeframe. For example, in the "created" dimension group above, the following dimensions would be created:
+Dimension groups create a set of dimensions all at once. They are named by combining the dimension group name and the timeframe. For example, in the "created" dimension group above, the following dimensions would be created:
 
 + created_raw
 + created_time

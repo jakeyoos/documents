@@ -6,7 +6,7 @@ Measures in Looker represent aggregate calculations (i.e. multi-row calculations
 
 ## Anatomy of a Basic Measure
 
-All measures need at least a name, a type, and most of the time a SQL definition.  For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/users.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">users</a> view file has a measure called `total_sale_price` inside of it:
+All measures need at least a name, a type, and most of the time a SQL definition.  For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> view file has a measure called `total_sale_price` inside of it:
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> View File</a>
@@ -17,6 +17,7 @@ measure: total_sale_price {
   sql: ${sale_price} ;;
 }
 ```
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=WHIBHhD6wQdymUPI0Fz4ja" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Sale Price</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-params/measure" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>measure</b> Docs</a><br /><br />
 
 If we break this down:
 
@@ -32,9 +33,9 @@ If we break this down:
 
 ## Try it Yourself
 
-The `products` view has a dimension called `cost`. Try adding a `total_cost` measure that adds up the total cost.
+The <a href="https://learn2.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view has a dimension called `retail_price`. Try adding a `total_retail_price` measure that adds up the total price.
 
-[See the Answer](https://learn2.looker.com/projects/e-commerce/files/z_answers.md#dimension-basics)<br /><br />
+<a href="https://learn2.looker.com/projects/e-commerce/files/z_answers.md#measure-basics" style="color:rgb(234,138,47);font-size:12px;"><i class="fa fa-check-square-o"></i> See the Answer</a><br /><br />
 
 
 

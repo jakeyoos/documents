@@ -15,8 +15,6 @@ explore:distribution_centers { }
 
 
 
-
-
 explore: order_items {
   join: orders {
     sql_on: ${orders.id} = ${order_items.order_id} ;;
@@ -45,11 +43,11 @@ explore: order_items {
   join: products {
     sql_on: ${products.id} = ${inventory_items.product_id} ;;
     type: left_outer
-    relationship: many_to_one
+    relationship: one_to_many
   }
 
   join:  distribution_centers {
-    sql_on: ${distribution_centers.id} = ${products.distribution_center_id} ;;
+    sql_on: ${distribution_centers.id} = ${inventory_items.product_distribution_center_id} ;;
     type: left_outer
     relationship: many_to_one
   }

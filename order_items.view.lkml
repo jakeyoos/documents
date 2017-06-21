@@ -70,17 +70,17 @@ view: order_items {
     case: {
       when: {
         sql: ${sale_price} < 20 ;;
-        label: "inexpensive"
+        label: "Inexpensive"
       }
       when: {
         sql: ${sale_price} >= 20 AND ${sale_price} < 100 ;;
-        label: "normal"
+        label: "Normal"
       }
       when: {
         sql: ${sale_price} >= 100 ;;
-        label: "expensive"
+        label: "Expensive"
       }
-      else: "unknown"
+      else: "Unknown"
     }
   }
 
@@ -126,7 +126,17 @@ view: order_items {
 
   measure: total_profit {
     type: number
-    sql: ${total_sale_price} - ${products.cost} ;;
+    sql: ${total_sale_price} - ${products.total_cost} ;;
+  }
+
+  measure: least_expensive_item {
+    type: min
+    sql: ${sale_price} ;;
+  }
+
+  measure: most_expensive_item {
+    type: max
+    sql: ${sale_price} ;;
   }
 
   # ----- Sets of fields for drilling ------
