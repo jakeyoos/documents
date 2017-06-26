@@ -71,7 +71,7 @@ You'll see that there are 2 new parameters required for `tier` dimensions. The `
 The `location` type allows you to create a location field, if you have a latitude and longitude available. This is useful when you need to map things in Looker, or calculate distances between items.
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
- From the <a href="https://learn2.looker.com/projects/e-commerce/files/distribution_center.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">distribution_center</a> View File</a>
+ From the <a href="https://learn2.looker.com/projects/e-commerce/files/distribution_centers.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">distribution_centers</a> View File</a>
 </div>
 ```
 dimension: location {
