@@ -64,7 +64,7 @@ dimension: age_tier {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=2uOecXdCneJVI3ECLmtqeQ" target="_blank"><i class="fa fa-search"></i> Explore the <b>Age Tier</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#tier" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: tier</b> Docs</a><br /><br />
 
-You'll see that there are 2 new parameters required for `tier` dimensions. The `tiers` parameter defines the number ranges you're interested in. The `style` parameter defines how the tiers will be displayed to users; you can see the available styles [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#style).<br /><br />
+You'll see that there are two new parameters required for `tier` dimensions. The `tiers` parameter defines the number ranges you're interested in. The `style` parameter defines how the tiers will be displayed to users; you can see the available styles [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#style).<br /><br />
 
 <h4 style="color:rgb(141,127,185)">Location</h4>
 
@@ -82,7 +82,7 @@ dimension: location {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/distribution_centers?qid=IIdOxpvWI8tqcOXrWJDDzC&toggle=vis" target="_blank"><i class="fa fa-search"></i> Explore the <b>Location</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#location" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: location</b> Docs</a><br /><br />
 
-You'll see that there are 2 new parameters required for `location` dimensions. The `sql_latitude` parameter defines the latitude of the location. The `sql_longitude` parameter defines the longitude of the location. These could be references to latitude and longitude fields (as in this example), or other SQL that extracts a latitutde and longitude.<br /><br />
+You'll see that there are two new parameters required for `location` dimensions. The `sql_latitude` parameter defines the latitude of the location. The `sql_longitude` parameter defines the longitude of the location. These could be references to latitude and longitude fields (as in this example), or other SQL that extracts a latitutde and longitude.<br /><br />
 
 <h4 style="color:rgb(141,127,185)">Distance</h4>
 
@@ -101,11 +101,11 @@ dimension: distance_from_distribution_center {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=rLtv5Q4dONlWcttSQtnL8d" target="_blank"><i class="fa fa-search"></i> Explore the <b>Distance from Distribution Center</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#distance" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: distance</b> Docs</a><br /><br />
 
-You'll see that there are 3 new parameters required for `distance` dimensions. The `start_location_field` parameter defines the first location. The `end_location_field` parameter defines the second location. The `units` field defines the distance units you'd like to be used; you can see the available units [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#distance).<br /><br />
+You'll see that there are three new parameters required for `distance` dimensions. The `start_location_field` parameter defines the first location. The `end_location_field` parameter defines the second location. The `units` field defines the distance units you'd like to be used; you can see the available units [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#distance).<br /><br />
 
 <h4 style="color:rgb(141,127,185)">Zipcode</h4>
 
-The `zipcode` type should be used with 5 digit, US zipcode data.
+The `zipcode` type should be used with 5-digit US zipcode data.
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/users.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">users</a> View File</a>

@@ -1,10 +1,10 @@
 <h1 style="color:rgb(100,81,138)">Dimension Options</h1>
 
-Dimensions have many other options that you can take advantage of. They are all documented on our [Field Parameters](https://looker.com/docs/reference/field-reference) doc, but we'll go over some of the most used options here.<br /><br />
+Dimensions have many other options that you can take advantage of. They are all documented on our [Field Parameters](https://looker.com/docs/reference/field-reference) docs, but we'll go over some of the most frequently used options here.<br /><br />
 
 <h4 style="color:rgb(141,127,185)">primary_key</h4>
 
-The `primary_key` parameter defines which dimension represents the primary key of a view. Defining a primary key is very important in LookML modeling, because it allows Looker to avoid double counting errors, which we discuss more in the [explore basics lesson](https://learn2.looker.com/projects/e-commerce/files/12_explore_basics.md).
+The `primary_key` parameter defines which dimension represents the primary key of a view. Defining a primary key is very important in LookML modeling, because it gives Looker the information it needs to avoid double counting errors, which we discuss more in the [Explore Basics](https://learn2.looker.com/projects/e-commerce/files/12_explore_basics.md) lesson.
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> View File</a>
@@ -20,7 +20,7 @@ dimension: id {
 
 <h4 style="color:rgb(141,127,185)">link</h4>
 
-The `link` parameter allows you to create links to other URLs that are related to your data. You specify a `label` that users will see, a `url` that the link should go to, and optionally a `icon_url` to an icon image that users will see. Users click on the ellipses icon next to the data to reveal the link.
+The `link` parameter allows you to create links to other URLs that are related to your data. You specify a `label` that users will see, a `url` that the link should go to, and optionally an `icon_url` to an icon image that users will see. To reveal the link, users click on the ellipses icon next to the data.
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> View File</a>
@@ -68,7 +68,7 @@ dimension: price_range {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=vfSw74vli4lb21XTZv7ixV" target="_blank"><i class="fa fa-search"></i> Explore the <b>Price Range</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-params/case" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>case</b> Docs</a><br /><br />
 
-The conditions are evaluated in the order that you write them. As soon as one condition evalutes to true that label is assigned to that row of data.<br /><br />
+The conditions are evaluated in the order that you write them. As soon as one condition evaluates to true that label is assigned to that row of data.<br /><br />
 
 <h4 style="color:rgb(141,127,185)">value_format_name and value_format</h4>
 
@@ -106,7 +106,7 @@ dimension: cost {
 
 <h2 style="color:rgb(100,81,138)">Next Step</h2>
 
-Next we'll look at dimension groups, which help deal with time based information efficiently.
+Next we'll look at dimension groups, which help deal with time-based information efficiently.
 
 <div style="float:left;font-weight:bold;">
   <a href="https://learn2.looker.com/projects/e-commerce/files/05_dimension_types.md">&#10094; Dimension Types</a>

@@ -1,6 +1,6 @@
 <h1 style="color:rgb(100,81,138)">Derived Tables</h1>
 
-If you need to, you can create database tables using Looker's "derived tables" feature, which you can read about in more detail in our [Derived Tables](https://looker.com/docs/data-modeling/learning-lookml/derived-tables) documentation.
+If you need to, you can create database tables using Looker's "derived tables" feature, which you can read about in more detail in our [Derived Tables](https://looker.com/docs/data-modeling/learning-lookml/derived-tables) documentation. Derived tables have many uses, such as calculating summary metrics and pre-aggregating data.
 
 Derived tables can be calculated on the fly each time they're queried, or they can be stored in your database. If you want derived tables to be storable, your admins will have needed to enable that feature when they setup Looker.
 
@@ -9,7 +9,7 @@ When you create a derived table, you'll write a SQL query against your database.
 <div style="border:2px solid rgb(141,127,185);border-radius:5px;padding:8px;">
 <span style="font-weight:bold;color:rgb(141,127,185);">Best Practice Alert</span><br /><br />
 
-If you're familiar with SQL or traditional business intelligence tools, you may be tempted to overuse derived tables. They certainly have valuable and powerful uses, but they are also static. Use regular LookML modeling when possible to create more dynamic and re-usable LookML that gives your users more freedom.<br /><br />
+If you're familiar with SQL or traditional business intelligence tools, you may be tempted to overuse derived tables. They certainly have valuable and powerful uses, but they are also rigid. Use regular LookML modeling when possible to create more dynamic and re-usable LookML that gives your users more freedom.<br /><br />
 
 You might also want to use derived tables to improve query performance, which <i>is</i> a valid strategy in some contexts. However, many modern databases are so fast that this is unnecessary. Consult your database admins if you're considering this route.
 </div><br /><br />

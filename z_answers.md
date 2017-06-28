@@ -10,7 +10,7 @@ This page includes the answers to all of the **Try it Yourself** questions throu
 
 <h4 style="color:rgb(141,127,185)">Question</h4>
 
-The `orders` table in our dataset has a column called `traffic_source` that hasn't yet been added in LookML. Try adding it using the information you've learned.
+The `orders` table in our dataset has a string column called `traffic_source` that hasn't yet been added in LookML. Try adding it using the information you've learned.
 
 <h4 style="color:rgb(141,127,185)">Answer</h4>
 

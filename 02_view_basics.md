@@ -23,7 +23,7 @@ If we break this down:
 
 + The second row `sql_table_name: public.orders ;;` tells Looker which database table to associate with this view.
 
-  When you setup a database connection in Looker you define a default schema (a.k.a. a "database" in MySQL). If that's the schema you want, and you name the view with exactly the same name as its table, you don't even need to add the `sql_table_name` parameter.
+  When a Looker admin creates a connection in Looker, they define a default schema (a.k.a. "database" in MySQL). If that's the schema you want, and you name the view with exactly the same name as its table, you don't even need to add the `sql_table_name` parameter.
 
   Also note that the row ends with `;;`. This is how Looker knows you're done writing the table name, and is the way all SQL-type parameters are ended in Looker.
 
@@ -33,7 +33,7 @@ You'll notice there are a lot of other dimensions and measures within the <a hre
 
 <h2 style="color:rgb(100,81,138)">Other View Settings</h2>
 
-All of the additional view level settings that you can apply in LookML can be found on our [View Parameters](https://looker.com/docs/reference/view-reference) docs page.<br /><br />
+All of the additional view-level settings that you can apply in LookML can be found on our [View Parameters](https://looker.com/docs/reference/view-reference) docs page.<br /><br />
 
 
 

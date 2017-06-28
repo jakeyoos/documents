@@ -39,7 +39,7 @@ If we break this down:
 
 <h2 style="color:rgb(100,81,138)">References in the sql Parameter</h2>
 
-When you're writing your `sql` parameters, it's important to know about the three types of references you can make:
+When you're writing your `sql` parameters, it's important to know about the three types of references you can make. When we say "field" we mean either a dimension or measure.
 
 Pattern | Examples | Definition
 --------|----------|-----------
@@ -82,7 +82,7 @@ Notice that the first name and last name dimensions above use the `${TABLE}.fiel
 
 <h2 style="color:rgb(100,81,138)">Try it Yourself</h2>
 
-The `orders` table in our dataset has a column called `traffic_source` that hasn't yet been added in LookML. Try adding it using the information you've learned.
+The `orders` table in our dataset has a string column called `traffic_source` that hasn't yet been added in LookML. Try adding it using the information you've learned.
 
 <a href="https://learn2.looker.com/projects/e-commerce/files/z_answers.md#dimension-basics" style="color:rgb(234,138,47);font-size:12px;"><i class="fa fa-check-square-o"></i> See the Answer</a><br /><br />
 
