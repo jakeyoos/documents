@@ -73,7 +73,7 @@ To break down just the first few rows:
 
 + The second row `join: orders {` joins the `orders` view into the `order_items` view
 
-+ The third row `sql_on: ${orders.id} = ${order_items.order_id} ;;` establishes the join condition between the `order_items` and `orders` view. Notice we can use the `${view_name.field_name}` references that we learned about in the [dimensions lesson](https://learn2.looker.com/projects/e-commerce/files/4_dimension_basics.md).
++ The third row `sql_on: ${orders.id} = ${order_items.order_id} ;;` establishes the join condition between the `order_items` and `orders` view. Notice we can use the `${view_name.field_name}` references that we learned about in the [dimensions lesson](https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md).
 
 + The fourth row `type: left_outer` defines the join as a `LEFT JOIN`. The `left_outer` value is the default value, so this row could have been excluded. Using a `LEFT JOIN` is *almost* always the correct decision, because it allows users to see all the data from `order_items`, even if there is no corresponding data in the joined views.
 
@@ -113,7 +113,7 @@ When a view is joined directly to an explore, like the `orders` view in the exam
 
 When a view is joined to an explore through another view - such as how `users` joins through `orders` to `order_items` in this example - the relationship being defined is from the intermediate view (`orders`) to the final view (`users`). In this example we're saying there could be many orders for one user.
 
-As mentioned in the [dimension options lesson](https://learn2.looker.com/projects/e-commerce/files/6_dimension_options.md), another critical step to keeping things functioning properly is to define a primary key for each view.<br /><br />
+As mentioned in the [dimension options lesson](https://learn2.looker.com/projects/e-commerce/files/06_dimension_options.md), another critical step to keeping things functioning properly is to define a primary key for each view.<br /><br />
 
 
 

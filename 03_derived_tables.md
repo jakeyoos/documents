@@ -50,7 +50,7 @@ If we break this down:
 
 + The eleventh row `persist_for: "24 hours"` tells Looker to store the results for 24 hours at a time. If this row was excluded, Looker would calculate the table every time it was used in a query.
 
-You’ll notice there are a couple other dimensions within the user_order_facts view, which we'll discuss in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/4_dimension_basics.md).<br /><br />
+You’ll notice there are a couple other dimensions within the user_order_facts view, which we'll discuss in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md).<br /><br />
 
 
 
@@ -71,9 +71,9 @@ All of the additional derived tables settings that you can apply in LookML can b
 Next, we'll look at the basics of dimensions.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/2_view_basics.md">&#10094; View Basics</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/02_view_basics.md">&#10094; View Basics</a>
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/4_dimension_basics.md">Dimension Basics &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md">Dimension Basics &#10095;</a>
 </div>

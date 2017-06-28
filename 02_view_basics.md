@@ -1,6 +1,6 @@
 <h1 style="color:rgb(100,81,138)">View Basics</h1>
 
-As mentioned in the [LookML Basics](https://learn2.looker.com/projects/e-commerce/files/1_lookml_basics.md) lesson, a **view** in Looker corresponds to a table in your database. You can also create your own database tables with Looker, and turn that into a view, but we'll cover that feature in the [next lesson](https://learn2.looker.com/projects/e-commerce/files/3_derived_tables.md).<br /><br />
+As mentioned in the [LookML Basics](https://learn2.looker.com/projects/e-commerce/files/01_lookml_basics.md) lesson, a **view** in Looker corresponds to a table in your database. You can also create your own database tables with Looker, and turn that into a view, but we'll cover that feature in the [next lesson](https://learn2.looker.com/projects/e-commerce/files/03_derived_tables.md).<br /><br />
 
 
 
@@ -27,7 +27,7 @@ If we break this down:
 
   Also note that the row ends with `;;`. This is how Looker knows you're done writing the table name, and is the way all SQL-type parameters are ended in Looker.
 
-You'll notice there are a lot of other dimensions and measures within the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view, but we'll discuss those separately in our <a href="https://learn2.looker.com/projects/e-commerce/files/4_dimension_basics.md">dimension</a> and <a href="https://learn2.looker.com/projects/e-commerce/files/8_measure_basics.md">measure</a> lessons.<br /><br />
+You'll notice there are a lot of other dimensions and measures within the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view, but we'll discuss those separately in our <a href="https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md">dimension</a> and <a href="https://learn2.looker.com/projects/e-commerce/files/08_measure_basics.md">measure</a> lessons.<br /><br />
 
 
 
@@ -42,9 +42,9 @@ All of the additional view level settings that you can apply in LookML can be fo
 Next, we'll look at creating your own database tables with Looker's derived table functionality.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/1_lookml_basics.md">&#10094; LookML Basics</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/01_lookml_basics.md">&#10094; LookML Basics</a>
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/3_derived_tables.md">Derived Tables &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/03_derived_tables.md">Derived Tables &#10095;</a>
 </div>

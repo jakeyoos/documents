@@ -98,7 +98,7 @@ measure: most_expensive_item {
 Next, we’ll look at some additional measure options that are commonly used.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/8_measure_basics.md">&#10094; Measure Basics</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/08_measure_basics.md">&#10094; Measure Basics</a>
 </div>
 
 <div style="float:right;font-weight:bold;">

@@ -109,9 +109,9 @@ dimension: cost {
 Next we'll look at dimension groups, which help deal with time based information efficiently.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/5_dimension_types.md">&#10094; Dimension Types</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/05_dimension_types.md">&#10094; Dimension Types</a>
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/7_dimension_groups.md">Dimension Groups &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/07_dimension_groups.md">Dimension Groups &#10095;</a>
 </div>

@@ -16,7 +16,7 @@ There are a few fundamental structures from which you'll build almost everything
 
 **Fields** - In general, each bit of data that your users are going to choose from will be represented as a LookML field. There are 4 different types of fields:
 
-+ *Dimensions* - An easy way to think of dimensions is that they represent a column of data in a database table, or a transformation or combination of columns. There are some nuances which we'll discuss with more detail in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/2_view_basics.md).
++ *Dimensions* - An easy way to think of dimensions is that they represent a column of data in a database table, or a transformation or combination of columns. There are some nuances which we'll discuss with more detail in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/02_view_basics.md).
 
 + *Dimension Groups* - Dimension groups allow you to create many dimensions all at once. Currently, they're solely for use with time based data.
 
@@ -49,5 +49,5 @@ There are a few fundamental structures from which you'll build almost everything
 Let's start by looking at the basics of views.
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/2_view_basics.md">View Basics &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/02_view_basics.md">View Basics &#10095;</a>
 </div>

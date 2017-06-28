@@ -125,9 +125,9 @@ dimension: zip {
 Next, we'll look at some additional dimension options that are commonly used.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/4_dimension_basics.md">&#10094; Dimension Basics</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md">&#10094; Dimension Basics</a>
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/6_dimension_options.md">Dimension Options &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/06_dimension_options.md">Dimension Options &#10095;</a>
 </div>

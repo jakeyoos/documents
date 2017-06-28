@@ -49,7 +49,7 @@ The `filters` parameter works by first specifying the dimension you want to filt
 With a solid grasp of views and the fields that live within them, we can now move onto understanding model files and how to link views together.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/9_measure_types.md">&#10094; Measure Types</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/09_measure_types.md">&#10094; Measure Types</a>
 </div>
 
 <div style="float:right;font-weight:bold;">

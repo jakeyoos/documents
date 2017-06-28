@@ -4,7 +4,7 @@ In the same way that a **view** is similar to a SQL table, a **dimension** is si
 
 First, a dimension can take its values directly from a single table column as-is, but it can also represent transformations and combinations of those columns. For example, a dimension could represent a first name column, but it could also represent the first letter of that name, or combine it with a last name.
 
-Second, dimensions are the options your users will use to group their data. This is important from a SQL perspective, because dimensions always go into the `GROUP BY` clause of the SQL that Looker generates. Consequently, your dimensions cannot be aggregates like counts or sums. In Looker, aggregates are handled by measures, which we'll [see later](https://learn2.looker.com/projects/e-commerce/files/8_measure_basics.md).<br /><br />
+Second, dimensions are the options your users will use to group their data. This is important from a SQL perspective, because dimensions always go into the `GROUP BY` clause of the SQL that Looker generates. Consequently, your dimensions cannot be aggregates like counts or sums. In Looker, aggregates are handled by measures, which we'll [see later](https://learn2.looker.com/projects/e-commerce/files/08_measure_basics.md).<br /><br />
 
 
 
@@ -27,7 +27,7 @@ If we break this down:
 
 + The first row `dimension: first_name {` creates a dimension with the name of `first_name`.
 
-+ The second row `type: string` gives the dimension a type. All of the possible types are defined on our [Dimension and Filter Types](https://looker.com/docs/reference/field-reference/dimension-type-reference) docs page, but we'll also go over them in the [next lesson](https://learn2.looker.com/projects/e-commerce/files/5_dimension_types.md).
++ The second row `type: string` gives the dimension a type. All of the possible types are defined on our [Dimension and Filter Types](https://looker.com/docs/reference/field-reference/dimension-type-reference) docs page, but we'll also go over them in the [next lesson](https://learn2.looker.com/projects/e-commerce/files/05_dimension_types.md).
 
 + The third row `sql: ${TABLE}.first_name ;;` defines how the dimension should be calculated. Any SQL that your database supports can be written here, as long as it is not an aggregate, and as long as the result matches the `type` of the dimension you've chosen. For example, you shouldn't write SQL that results in a number if you've chosen a type of "string".
 
@@ -93,9 +93,9 @@ The `orders` table in our dataset has a column called `traffic_source` that hasn
 Next, we'll look at examples of all the available dimension types.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/3_derived_tables.md">&#10094; Derived Tables</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/03_derived_tables.md">&#10094; Derived Tables</a>
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/5_dimension_types.md">Dimension Types &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/05_dimension_types.md">Dimension Types &#10095;</a>
 </div>

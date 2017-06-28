@@ -84,9 +84,9 @@ dimension: created_week {
 Now that you have a grasp of dimensions and dimension groups, it's time to look at their sibling: measures.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/6_dimension_options.md">&#10094; Dimension Options</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/06_dimension_options.md">&#10094; Dimension Options</a>
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/8_measure_basics.md">Measure Basics &#10095;</a>
+  <a href="https://learn2.looker.com/projects/e-commerce/files/08_measure_basics.md">Measure Basics &#10095;</a>
 </div>
