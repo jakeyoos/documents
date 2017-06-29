@@ -1,12 +1,12 @@
 <h1 style="color:rgb(100,81,138)">Explore Basics</h1>
 
-An **explore** is how you expose a **view** into the Explore menu. However, it is also used to combine together multiple views, which is critical for unlocking the full power of Looker.<br /><br />
+An **explore** is how you expose a **view** into the Explore menu. It's also used to combine together multiple views, which is critical for unlocking the full power of Looker.<br /><br />
 
 
 
 <h2 style="color:rgb(100,81,138)">Anatomy of a Basic Explore</h2>
 
-Although it is possible to give explores arbitrary names by using the correct set of LookML parameters, typically you'll name an explore with the name of a view. For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file has an explore called `product` inside of it:
+Although it is possible to give explores arbitrary names by using additional LookML parameters, typically you'll name an explore with the name of a view. For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file has an explore called `product` inside of it:
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> Model File</a>
@@ -14,6 +14,7 @@ Although it is possible to give explores arbitrary names by using the correct se
 ```
 explore: products { }
 ```
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/products"><i class="fa fa-search"></i> Explore the <b>Products</b> Explore</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/explore-params/explore" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>explore</b> Docs</a><br /><br />
 
 We've defined a view called "products" in the <a href="https://learn2.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view file, and created an explore from it. This is not a particularly interesting explore, but it does expose the "products" view into the Explore menu.<br /><br />
 

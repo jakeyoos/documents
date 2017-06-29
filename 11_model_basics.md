@@ -2,7 +2,7 @@
 
 In LookML, the primary function of a **model** is to house **explores**, and to define certain high-level settings such as what database connection should be used. We'll talk about explores in the next lesson, and focus on the model-level settings here.
 
-Unlike the LookML items you've seen so far, there is no parameter to create a model. Instead, a model is created by adding a model file. In this case, you'll see a single model file called <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> on the left hand side of the screen.<br /><br />
+Unlike the LookML items you've seen so far, there is no parameter to create a model. Instead, a model is created by adding a model file. In this case, you'll see a single model file called <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> on the left hand side of the screen, under the "Models" section.<br /><br />
 
 
 
@@ -21,9 +21,9 @@ include: "*.view.lkml"
 
 If we break this down:
 
-+ The first row `connection: "thelook_events"` determines which database connection this  model will query. Database connections are setup by Looker admins, and you can read about them in our [Connections](https://looker.com/docs/admin-options/database/connections) docs page.
++ The first row `connection: "thelook_events"` determines which database connection this  model will query. Database connections are set up by Looker admins, and you can read about them in our [Connections](https://looker.com/docs/admin-options/database/connections) docs page.
 
-+ The second row `include: "*.view.lkml"` makes all of our view files available to the model. You'll notice we're using the wildcard `*` to do this, but if you only want certain view files included, you could list the files individually like `include: "orders.view.lkml"`.
++ The second row `include: "*.view.lkml"` makes all of the view files in this project available to the model. You'll notice we're using the wildcard `*` to do this, but if you only want certain view files included, you could list the files individually on multiple rows like `include: "orders.view.lkml"`.
 
 You’ll notice there are a lot of explores defined within the model, but we’ll discuss those separately in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/12_explore_basics.md).<br /><br />
 

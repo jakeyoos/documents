@@ -6,7 +6,7 @@ Measures in Looker represent aggregate calculations (i.e. multi-row calculations
 
 <h2 style="color:rgb(100,81,138)">Anatomy of a Basic Measure</h2>
 
-All measures need at least a name, a type, and most of the time a SQL definition.  For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> view file has a measure called `total_sale_price` inside of it:
+All measures need at least a name, a type, and most of the time a SQL definition.  For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> view file includes a measure called `total_sale_price`:
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> View File</a>
@@ -27,7 +27,7 @@ If we break this down:
 
 + The third row `sql: ${sale_price} ;;` defines what will be included in the sum.
 
-+ The last row `}` closes the dimension.<br /><br />
++ The last row `}` closes the measure.<br /><br />
 
 
 

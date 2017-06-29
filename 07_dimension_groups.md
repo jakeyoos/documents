@@ -2,7 +2,7 @@
 
 Dimension groups allow you to create multiple time-based dimensions at the same time, based on a time column in your database. Currently, there are no other use of dimension groups.
 
-It is possible to create individual time-based dimensions, though the normal pattern in Looker is to use a dimension group.<br /><br />
+It is possible to create individual time-based dimensions, but the normal pattern in Looker is to use a dimension group.<br /><br />
 
 
 
@@ -41,7 +41,7 @@ If we break this down:
 
 + The third row `datatype: datetime` specifies what type of time information you'll be providing in the `sql` parameter. All of the supported data types are listed on the <a href="https://looker.com/docs/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page. In this case this row could be omitted, since "datetime" is the default value.
 
-+ The fourth row `timeframes: [` starts a list of timeframes that you want to be generated. All of the possible timeframes are defined on our <a href="https://looker.com/docs/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page.
++ The fourth row `timeframes: [` starts a list of timeframes that you want to be generated. All of the possible timeframes are defined on our <a href="https://looker.com/docs/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page, and are discussed in the next section.
 
 + The thirteenth row `sql: ${TABLE}.created_at ;;` defines the underlying time information that should be used.
 
@@ -61,7 +61,7 @@ Dimension groups create a set of dimensions all at once. They are named by combi
 + created_quarter
 + created_year
 
-If you wanted to reference these dimensions, you would need to use `${created_time}`, `${created_date}`, etc. If you simply used `${created}` Looker will generate an error.<br /><br />
+If you wanted to reference these dimensions, you would need to use `${created_time}`, `${created_date}`, etc. If you simply used `${created}` Looker will generate an error. Also, please note that the "raw" timeframe is not displayed to users, and is typically used for SQL calculations and joins.<br /><br />
 
 
 
