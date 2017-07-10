@@ -116,6 +116,12 @@ When a view is joined to an explore through another view - such as how `users` j
 
 As mentioned in the [dimension options lesson](https://learn2.looker.com/projects/e-commerce/files/06_dimension_options.md), another critical step to keeping things functioning properly is to define a primary key for each view.<br /><br />
 
+<h4 style="color:rgb(141,127,185)">Why Have More than One Explore?</h4>
+
+As we saw above, the view that you reference with `explore:` goes into the `FROM` clause of the SQL statement. Any additional views you add to it with `join:` usually go into a `LEFT JOIN` clause. This means that you'll see every record in the primary view of the explore, but you'll only see joined view records if they have a match in the primary view.
+
+That's a mouthful, so an example may help. In the "order_items" explore we just looked at, you would see every order item, but you would only see users who had some order items associated with them. If you wanted to see every user no matter what, you would probably want to create another explore that started with "users".<br /><br />
+
 
 
 <h2 style="color:rgb(100,81,138)">Try it Yourself</h2>

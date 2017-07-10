@@ -7,12 +7,6 @@ view: products {
     sql: ${TABLE}.id ;;
   }
 
-  dimension: distribution_center_id {
-    type: number
-    hidden: yes
-    sql: ${TABLE}.distribution_center_id ;;
-  }
-
   dimension: cost {
     type: number
     sql: ${TABLE}.cost ;;

@@ -26,7 +26,7 @@ There are a few fundamental structures from which you'll build almost everything
 
 **Views** - Views represent the tables in your database. Or, you can create your own tables with Looker, and then make that into a view.
 
-**Explores** - Explores define which views will be made available to users in the Explore menu at the top of Looker. You can also define the join relationships between multiple views to create explores that contain information from multiple views.
+**Explores** - Explores define which views will be shown in the Explore menu at the top of Looker. You can also define join relationships between multiple views to create explores that contain information from multiple views.
 
 **Models** - Models are the place where you will define your explores. In *general* you'll have one model per database. However, models can be used to control various types of data access, so you might break this rule. You can read more about that topic on our [Access Control and Permission Management](https://looker.com/docs/admin-options/tutorials/permissions) docs page.<br /><br />
 

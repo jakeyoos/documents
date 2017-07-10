@@ -47,6 +47,9 @@ dimension: is_complete {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=95MSkVN6ERioo0phGuor7J" target="_blank"><i class="fa fa-search"></i> Explore the <b>Is Complete</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#yesno" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: yesno</b> Docs</a><br /><br />
 
+If you've programmed before you may be familiar with the concept of "boolean" (true or false) values. Boolean values are generally treated as yes/no values in Looker. Be sure to read Looker's [type: yesno](https://looker.com/docs/reference/field-reference/dimension-type-reference#yesno) documentation to understand how to deal with booleans correctly.<br /><br />
+
+
 <h4 style="color:rgb(141,127,185)">Tier</h4>
 
 The `tier` type allows you to set various ranges, then bucket number or integer data into those ranges. You can also choose what style will be used to display those ranges to users.

@@ -4,7 +4,7 @@ Dimensions have many other options that you can take advantage of. They are all 
 
 <h4 style="color:rgb(141,127,185)">primary_key</h4>
 
-The `primary_key` parameter defines which dimension represents the primary key of a view. Defining a primary key is very important in LookML modeling, because it gives Looker the information it needs to avoid double counting errors, which we discuss more in the [Explore Basics](https://learn2.looker.com/projects/e-commerce/files/12_explore_basics.md) lesson.
+The `primary_key` parameter defines which dimension represents the primary key of a view. Defining a primary key is *very* important in LookML modeling, because it gives Looker the information it needs to properly calculate measures (discussed further in the [Explore Basics](https://learn2.looker.com/projects/e-commerce/files/12_explore_basics.md) lesson). In fact, if you forget to define a primary key, Looker will generally hide measures from that view to avoid displaying bad information to users.
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> View File</a>
