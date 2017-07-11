@@ -31,7 +31,7 @@ dimension_group: created {
   sql: ${TABLE}.created_at ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=3p4HPhJyr3HYuEEkdN1Bar" target="_blank"><i class="fa fa-search"></i> Explore All of the Created Time Dimensions</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-params/dimension_group" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>dimension_group</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=3p4HPhJyr3HYuEEkdN1Bar" target="_blank"><i class="fa fa-search"></i> Explore All of the Created Time Dimensions</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-params/dimension_group" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>dimension_group</b> Docs</a><br /><br />
 
 If we break this down:
 
@@ -39,9 +39,9 @@ If we break this down:
 
 + The second row `type: time` is required for all dimension groups.
 
-+ The third row `datatype: datetime` specifies what type of time information you'll be providing in the `sql` parameter. All of the supported data types are listed on the <a href="https://looker.com/docs/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page. In this case this row could be omitted, since "datetime" is the default value.
++ The third row `datatype: datetime` specifies what type of time information you'll be providing in the `sql` parameter. All of the supported data types are listed on the <a href="https://docs.looker.com/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page. In this case this row could be omitted, since "datetime" is the default value.
 
-+ The fourth row `timeframes: [` starts a list of timeframes that you want to be generated. All of the possible timeframes are defined on our <a href="https://looker.com/docs/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page, and are discussed in the next section.
++ The fourth row `timeframes: [` starts a list of timeframes that you want to be generated. All of the possible timeframes are defined on our <a href="https://docs.looker.com/reference/field-params/dimension_group" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">dimension_group</a> docs page, and are discussed in the next section.
 
 + The thirteenth row `sql: ${TABLE}.created_at ;;` defines the underlying time information that should be used.
 
@@ -67,7 +67,7 @@ If you wanted to reference these dimensions, you would need to use `${created_ti
 
 <h2 style="color:rgb(100,81,138)">Creating Individual Time Dimensions</h2>
 
-You can create individual, time-based dimensions if you like. You'll just need to know the `type:` that you want to use, which you'll find listed on our [Dimension and Filter Types](https://looker.com/docs/reference/field-reference/dimension-type-reference#individual_time_and_date_types) docs page. All of the individual time based types start with `date_`. For example:
+You can create individual, time-based dimensions if you like. You'll just need to know the `type:` that you want to use, which you'll find listed on our [Dimension and Filter Types](https://docs.looker.com/reference/field-reference/dimension-type-reference#individual_time_and_date_types) docs page. All of the individual time based types start with `date_`. For example:
 
 ```
 dimension: created_week {

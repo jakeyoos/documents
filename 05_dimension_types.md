@@ -1,6 +1,6 @@
 <h1 style="color:rgb(100,81,138)">Dimension Types</h1>
 
-Dimensions can have many different types. In this lesson we'll look at examples of all these types and briefly talk about when to use them. For more complete documentation about types, check out our [Dimension and Filter Types](https://looker.com/docs/reference/field-reference/dimension-type-reference) page.<br /><br />
+Dimensions can have many different types. In this lesson we'll look at examples of all these types and briefly talk about when to use them. For more complete documentation about types, check out our [Dimension and Filter Types](https://docs.looker.com/reference/field-reference/dimension-type-reference) page.<br /><br />
 
 <h4 style="color:rgb(141,127,185)">String</h4>
 
@@ -15,7 +15,7 @@ dimension: first_name {
   sql: ${TABLE}.first_name ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=WFTdUVRhnxmOQmJwZ2wAso" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=WFTdUVRhnxmOQmJwZ2wAso" target="_blank"><i class="fa fa-search"></i> Explore the <b>First Name</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/dimension-type-reference#string" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: string</b> Docs</a><br /><br />
 
 <h4 style="color:rgb(141,127,185)">Number</h4>
 
@@ -30,7 +30,7 @@ dimension: sale_price {
   sql: ${TABLE}.sale_price ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=N3Ra8idDQbiCqSaEfRA1w8" target="_blank"><i class="fa fa-search"></i> Explore the <b>Sale Price</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#number" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: number</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=N3Ra8idDQbiCqSaEfRA1w8" target="_blank"><i class="fa fa-search"></i> Explore the <b>Sale Price</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/dimension-type-reference#number" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: number</b> Docs</a><br /><br />
 
 <h4 style="color:rgb(141,127,185)">YesNo</h4>
 
@@ -45,9 +45,9 @@ dimension: is_complete {
   sql: ${status} = 'complete' ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=95MSkVN6ERioo0phGuor7J" target="_blank"><i class="fa fa-search"></i> Explore the <b>Is Complete</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#yesno" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: yesno</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=95MSkVN6ERioo0phGuor7J" target="_blank"><i class="fa fa-search"></i> Explore the <b>Is Complete</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/dimension-type-reference#yesno" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: yesno</b> Docs</a><br /><br />
 
-If you've programmed before you may be familiar with the concept of "boolean" (true or false) values. Boolean values are generally treated as yes/no values in Looker. Be sure to read Looker's [type: yesno](https://looker.com/docs/reference/field-reference/dimension-type-reference#yesno) documentation to understand how to deal with booleans correctly.<br /><br />
+If you've programmed before you may be familiar with the concept of "boolean" (true or false) values. Boolean values are generally treated as yes/no values in Looker. Be sure to read Looker's [type: yesno](https://docs.looker.com/reference/field-reference/dimension-type-reference#yesno) documentation to understand how to deal with booleans correctly.<br /><br />
 
 
 <h4 style="color:rgb(141,127,185)">Tier</h4>
@@ -65,9 +65,9 @@ dimension: age_tier {
   sql: ${age} ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=2uOecXdCneJVI3ECLmtqeQ" target="_blank"><i class="fa fa-search"></i> Explore the <b>Age Tier</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#tier" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: tier</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=2uOecXdCneJVI3ECLmtqeQ" target="_blank"><i class="fa fa-search"></i> Explore the <b>Age Tier</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/dimension-type-reference#tier" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: tier</b> Docs</a><br /><br />
 
-You'll see that there are two new parameters required for `tier` dimensions. The `tiers` parameter defines the number ranges you're interested in. The `style` parameter defines how the tiers will be displayed to users; you can see the available styles [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#style).<br /><br />
+You'll see that there are two new parameters required for `tier` dimensions. The `tiers` parameter defines the number ranges you're interested in. The `style` parameter defines how the tiers will be displayed to users; you can see the available styles [in our documentation](https://docs.looker.com/reference/field-reference/dimension-type-reference#style).<br /><br />
 
 <h4 style="color:rgb(141,127,185)">Location</h4>
 
@@ -83,7 +83,7 @@ dimension: location {
   sql_longitude: ${longitude} ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/distribution_centers?qid=IIdOxpvWI8tqcOXrWJDDzC&toggle=vis" target="_blank"><i class="fa fa-search"></i> Explore the <b>Location</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#location" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: location</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/distribution_centers?qid=IIdOxpvWI8tqcOXrWJDDzC&toggle=vis" target="_blank"><i class="fa fa-search"></i> Explore the <b>Location</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/dimension-type-reference#location" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: location</b> Docs</a><br /><br />
 
 You'll see that there are two new parameters required for `location` dimensions. The `sql_latitude` parameter defines the latitude of the location. The `sql_longitude` parameter defines the longitude of the location. These could be references to latitude and longitude fields (as in this example), or other SQL that extracts a latitutde and longitude.<br /><br />
 
@@ -102,9 +102,9 @@ dimension: distance_from_distribution_center {
   units: miles
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=rLtv5Q4dONlWcttSQtnL8d" target="_blank"><i class="fa fa-search"></i> Explore the <b>Distance from Distribution Center</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#distance" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: distance</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=rLtv5Q4dONlWcttSQtnL8d" target="_blank"><i class="fa fa-search"></i> Explore the <b>Distance from Distribution Center</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/dimension-type-reference#distance" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: distance</b> Docs</a><br /><br />
 
-You'll see that there are three new parameters required for `distance` dimensions. The `start_location_field` parameter defines the first location. The `end_location_field` parameter defines the second location. The `units` field defines the distance units you'd like to be used; you can see the available units [in our documentation](https://looker.com/docs/reference/field-reference/dimension-type-reference#distance).<br /><br />
+You'll see that there are three new parameters required for `distance` dimensions. The `start_location_field` parameter defines the first location. The `end_location_field` parameter defines the second location. The `units` field defines the distance units you'd like to be used; you can see the available units [in our documentation](https://docs.looker.com/reference/field-reference/dimension-type-reference#distance).<br /><br />
 
 <h4 style="color:rgb(141,127,185)">Zipcode</h4>
 
@@ -119,7 +119,7 @@ dimension: zip {
   sql: ${TABLE}.zipcode ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=ttlB9Dh8Ox3yiMk0JsVfN4" target="_blank"><i class="fa fa-search"></i> Explore the <b>Zipcode</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/dimension-type-reference#zipcode" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: zipcode</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=ttlB9Dh8Ox3yiMk0JsVfN4" target="_blank"><i class="fa fa-search"></i> Explore the <b>Zipcode</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/dimension-type-reference#zipcode" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: zipcode</b> Docs</a><br /><br />
 
 
 

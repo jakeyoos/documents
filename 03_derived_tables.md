@@ -1,6 +1,6 @@
 <h1 style="color:rgb(100,81,138)">Derived Tables</h1>
 
-If you need to, you can create database tables using Looker's "derived tables" feature, which you can read about in more detail in our [Derived Tables](https://looker.com/docs/data-modeling/learning-lookml/derived-tables) documentation. Derived tables have many uses, such as calculating summary metrics and pre-aggregating data.
+If you need to, you can create database tables using Looker's "derived tables" feature, which you can read about in more detail in our [Derived Tables](https://docs.looker.com/data-modeling/learning-lookml/derived-tables) documentation. Derived tables have many uses, such as calculating summary metrics and pre-aggregating data.
 
 Derived tables can be calculated on the fly each time they're queried, or they can be stored in your database. If you want derived tables to be storable, your admins will have needed to enable that feature when they setup Looker.
 
@@ -36,7 +36,7 @@ view: user_order_facts {
         customer_id ;;
     persist_for: "24 hours"
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>User Order Facts</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/view-params/derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>derived_table</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/view-params/sql-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/view-params/persist_for-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>persist_for</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>User Order Facts</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>derived_table</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/sql-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/view-params/persist_for-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>persist_for</b> Docs</a><br /><br />
 
 If we break this down:
 
@@ -56,13 +56,13 @@ You’ll notice there are a couple other dimensions within the user_order_facts 
 
 <h2 style="color:rgb(100,81,138)">Understanding Persistence</h2>
 
-In the example above, we saw one option for setting persistence: `persist_for: "24 hours"`. However, there are other persistence options available. It's also important to understand some of the details about how persistence works and the impact that it can have. Please read our [Derived Tables](https://looker.com/docs/data-modeling/learning-lookml/derived-tables#adding_persistence) documentation to fully understand this feature.<br /><br />
+In the example above, we saw one option for setting persistence: `persist_for: "24 hours"`. However, there are other persistence options available. It's also important to understand some of the details about how persistence works and the impact that it can have. Please read our [Derived Tables](https://docs.looker.com/data-modeling/learning-lookml/derived-tables#adding_persistence) documentation to fully understand this feature.<br /><br />
 
 
 
 <h2 style="color:rgb(100,81,138)">Other Derived Table Settings</h2>
 
-All of the additional derived tables settings that you can apply in LookML can be found on our [View Parameters](https://looker.com/docs/reference/view-reference) docs page.<br /><br />
+All of the additional derived tables settings that you can apply in LookML can be found on our [View Parameters](https://docs.looker.com/reference/view-reference) docs page.<br /><br />
 
 
 

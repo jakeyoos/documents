@@ -1,6 +1,6 @@
 <h1 style="color:rgb(100,81,138)">Measure Types</h1>
 
-Measures have many different types. In this lesson we'll look at examples of most of these types and briefly talk about when to use them. For more complete documentation about types, check out our [Measure Types](https://looker.com/docs/reference/field-reference/measure-type-reference) page.<br /><br />
+Measures have many different types. In this lesson we'll look at examples of most of these types and briefly talk about when to use them. For more complete documentation about types, check out our [Measure Types](https://docs.looker.com/reference/field-reference/measure-type-reference) page.<br /><br />
 
 <h4 style="color:rgb(141,127,185)">Count</h4>
 
@@ -14,7 +14,7 @@ measure: count {
   type: count
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=scD756LkuuL0XcTyHHyGtZ" target="_blank"><i class="fa fa-search"></i> Explore the <b>Count</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/measure-type-reference#count" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: count</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=scD756LkuuL0XcTyHHyGtZ" target="_blank"><i class="fa fa-search"></i> Explore the <b>Count</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/measure-type-reference#count" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: count</b> Docs</a><br /><br />
 
 <h4 style="color:rgb(141,127,185)">Sum</h4>
 
@@ -29,7 +29,7 @@ measure: total_sale_price {
   sql: ${sale_price} ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=ngfYyTLCYM870HFLAJamwm" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Profit</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/measure-type-reference#sum" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: sum</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=ngfYyTLCYM870HFLAJamwm" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Profit</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/measure-type-reference#sum" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: sum</b> Docs</a><br /><br />
 
 <h4 style="color:rgb(141,127,185)">Average</h4>
 
@@ -44,11 +44,11 @@ measure: average_sale_price {
   sql: ${sale_price} ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=6WdS06pnGsfQBvIHSVbO7o" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Profit</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/measure-type-reference#average" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: average</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=6WdS06pnGsfQBvIHSVbO7o" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Profit</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/measure-type-reference#average" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: average</b> Docs</a><br /><br />
 
 <h4 style="color:rgb(141,127,185)">Min</h4>
 
-The `min` type finds the minimum of the values provided in the `sql` parameter. Please note this will not work with a time or date, but our documentation describes a [workaround](https://looker.com/docs/reference/field-reference/measure-type-reference#date).
+The `min` type finds the minimum of the values provided in the `sql` parameter. Please note this will not work with a time or date, but our documentation describes a [workaround](https://docs.looker.com/reference/field-reference/measure-type-reference#date).
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> View File</a>
@@ -59,11 +59,11 @@ measure: least_expensive_item {
   sql: ${sale_price} ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=tWbuDRohCLFD7UUSJhSDIW" target="_blank"><i class="fa fa-search"></i> Explore the <b>Least Expensive Item</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/measure-type-reference#min" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: min</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=tWbuDRohCLFD7UUSJhSDIW" target="_blank"><i class="fa fa-search"></i> Explore the <b>Least Expensive Item</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/measure-type-reference#min" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: min</b> Docs</a><br /><br />
 
 <h4 style="color:rgb(141,127,185)">Max</h4>
 
-The `max` type finds the maximum of the values provided in the `sql` parameter. Please note this will not work with a time or date, but our documentation describes a [workaround](https://looker.com/docs/reference/field-reference/measure-type-reference#date).
+The `max` type finds the maximum of the values provided in the `sql` parameter. Please note this will not work with a time or date, but our documentation describes a [workaround](https://docs.looker.com/reference/field-reference/measure-type-reference#date).
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
  From the <a href="https://learn2.looker.com/projects/e-commerce/files/order_items.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">order_items</a> View File</a>
@@ -74,7 +74,7 @@ measure: most_expensive_item {
   sql: ${sale_price} ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=vRtljLJ7mIrq25ybNkgiKk" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Profit</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/measure-type-reference#max" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: max</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=vRtljLJ7mIrq25ybNkgiKk" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Profit</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/measure-type-reference#max" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: max</b> Docs</a><br /><br />
 
 <h4 style="color:rgb(141,127,185)">Number</h4>
 
@@ -89,7 +89,7 @@ measure: total_profit {
   sql: ${total_sale_price} - ${product.total_cost} ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=6MdgO656En8m33e7b33Pkq" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Profit</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-reference/measure-type-reference#number" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: number</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=6MdgO656En8m33e7b33Pkq" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Profit</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-reference/measure-type-reference#number" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type: number</b> Docs</a><br /><br />
 
 
 <h2 style="color:rgb(100,81,138)">Next Step</h2>

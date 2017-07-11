@@ -15,7 +15,7 @@ Basic views are simple to define in LookML, and only require 1 or 2 parameters. 
 view: orders {
   sql_table_name: public.orders ;;
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders" target="_blank"><i class="fa fa-search"></i> Explore the <b>Orders</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/view-params/view" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>view</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/view-params/sql_table_name-for-view" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql_table_name</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders" target="_blank"><i class="fa fa-search"></i> Explore the <b>Orders</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/view" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>view</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/view-params/sql_table_name-for-view" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql_table_name</b> Docs</a><br /><br />
 
 If we break this down:
 
@@ -33,7 +33,7 @@ You'll notice there are a lot of other dimensions and measures within the <a hre
 
 <h2 style="color:rgb(100,81,138)">Other View Settings</h2>
 
-All of the additional view-level settings that you can apply in LookML can be found on our [View Parameters](https://looker.com/docs/reference/view-reference) docs page.<br /><br />
+All of the additional view-level settings that you can apply in LookML can be found on our [View Parameters](https://docs.looker.com/reference/view-reference) docs page.<br /><br />
 
 
 

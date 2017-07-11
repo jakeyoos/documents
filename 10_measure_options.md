@@ -1,6 +1,6 @@
 <h1 style="color:rgb(100,81,138)">Measure Options</h1>
 
-Measures have many other options that you can take advantage of. They are all documented on our [Field Parameters](https://looker.com/docs/reference/field-reference) docs page, but we'll go over some of the most frequently used options here.<br /><br />
+Measures have many other options that you can take advantage of. They are all documented on our [Field Parameters](https://docs.looker.com/reference/field-reference) docs page, but we'll go over some of the most frequently used options here.<br /><br />
 
 <h4 style="color:rgb(141,127,185)">drill_fields</h4>
 
@@ -17,9 +17,9 @@ measure: count {
   drill_fields: [id, first_name, last_name]
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=3IPYDe0Zt4rjaA5psUfn4c" target="_blank"><i class="fa fa-search"></i> Explore the <b>Count</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-params/drill_fields" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>drill_fields</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=3IPYDe0Zt4rjaA5psUfn4c" target="_blank"><i class="fa fa-search"></i> Explore the <b>Count</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-params/drill_fields" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>drill_fields</b> Docs</a><br /><br />
 
-The `drill_fields` parameter can also be used on dimensions, but has a slightly different effect. You can also read about that in the [drill_fields documentation](https://looker.com/docs/reference/field-params/drill_fields#drilling_into_dimensions).<br /><br />
+The `drill_fields` parameter can also be used on dimensions, but has a slightly different effect. You can also read about that in the [drill_fields documentation](https://docs.looker.com/reference/field-params/drill_fields#drilling_into_dimensions).<br /><br />
 
 <h4 style="color:rgb(141,127,185)">filters</h4>
 
@@ -38,7 +38,7 @@ measure: female_count {
   }
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=iPeeFg0qUfF1ctAcO0s4XT" target="_blank"><i class="fa fa-search"></i> Explore the <b>Female Count</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-params/filters" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>filters</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/users?qid=iPeeFg0qUfF1ctAcO0s4XT" target="_blank"><i class="fa fa-search"></i> Explore the <b>Female Count</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-params/filters" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>filters</b> Docs</a><br /><br />
 
 The `filters` parameter works by first specifying the dimension you want to filter on, and then the value you want to set it equal to. In the "female_count" example above, we're saying that we want to filter the count by setting the gender dimension equal to "Female".<br /><br />
 

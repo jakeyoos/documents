@@ -17,11 +17,11 @@ You'll see that the top of our <a href="https://learn2.looker.com/projects/e-com
 connection: "thelook_events"
 include: "*.view.lkml"
 ```
-<a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://looker.com/docs/reference/model-params/connection-for-model" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>connection</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/model-params/include" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>include</b> Docs</a><br /><br />
+<a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/model-params/connection-for-model" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>connection</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/model-params/include" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>include</b> Docs</a><br /><br />
 
 If we break this down:
 
-+ The first row `connection: "thelook_events"` determines which database connection this  model will query. Database connections are set up by Looker admins, and you can read about them in our [Connections](https://looker.com/docs/admin-options/database/connections) docs page.
++ The first row `connection: "thelook_events"` determines which database connection this  model will query. Database connections are set up by Looker admins, and you can read about them in our [Connections](https://docs.looker.com/admin-options/database/connections) docs page.
 
 + The second row `include: "*.view.lkml"` makes all of the view files in this project available to the model. You'll notice we're using the wildcard `*` to do this, but if you only want certain view files included, you could list the files individually on multiple rows like `include: "orders.view.lkml"`.
 
@@ -31,7 +31,7 @@ You’ll notice there are a lot of explores defined within the model, but we’l
 
 <h2 style="color:rgb(100,81,138)">Other Model Settings</h2>
 
-All of the additional model level settings that you can apply in LookML can be found on our [Model Parameters](https://looker.com/docs/reference/model-reference) docs page.<br /><br />
+All of the additional model level settings that you can apply in LookML can be found on our [Model Parameters](https://docs.looker.com/reference/model-reference) docs page.<br /><br />
 
 
 

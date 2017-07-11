@@ -4,7 +4,7 @@ Welcome to our e-commerce tutorial. Unlike the [Name Game](https://learn2.looker
 
 The data set we're working with here is sales data from an e-commerce clothing store. It has a few, relatively straightforward data tables. Some of the information and join relationships in this schema are redundant, so we've marked those in grey.
 
-<img src="https://looker.com/assets/docs/images/learn-the-look-erd.png">
+<img src="https://docs.looker.com/assets/images/learn-the-look-erd.png">
 
 As mentioned in the intro, you should have a basic comfort level with SQL in order to get the most out of this tutorial and Looker.<br /><br />
 
@@ -22,13 +22,13 @@ There are a few fundamental structures from which you'll build almost everything
 
 + *Measures* - Measures represent aggregate functions - like `COUNT`, `SUM`, and `MAX` - in the SQL query that Looker builds.
 
-+ *Filters* - It's important to note that, in general, you don't need to explicitly create filters for your users. The dimensions and measures you create will automatically be available to your users as filters. However, there are some advanced use cases where you need to create a filter that *doesn't* have a dimension or measure associated with it. We won't be covering this type of field in this tutorial, but you can read about them in our [Templated Filter](https://looker.com/docs/data-modeling/learning-lookml/templated-filters) doc if you like.
++ *Filters* - It's important to note that, in general, you don't need to explicitly create filters for your users. The dimensions and measures you create will automatically be available to your users as filters. However, there are some advanced use cases where you need to create a filter that *doesn't* have a dimension or measure associated with it. We won't be covering this type of field in this tutorial, but you can read about them in our [Templated Filter](https://docs.looker.com/data-modeling/learning-lookml/templated-filters) doc if you like.
 
 **Views** - Views represent the tables in your database. Or, you can create your own tables with Looker, and then make that into a view.
 
 **Explores** - Explores define which views will be shown in the Explore menu at the top of Looker. You can also define join relationships between multiple views to create explores that contain information from multiple views.
 
-**Models** - Models are the place where you will define your explores. In *general* you'll have one model per database. However, models can be used to control various types of data access, so you might break this rule. You can read more about that topic on our [Access Control and Permission Management](https://looker.com/docs/admin-options/tutorials/permissions) docs page.<br /><br />
+**Models** - Models are the place where you will define your explores. In *general* you'll have one model per database. However, models can be used to control various types of data access, so you might break this rule. You can read more about that topic on our [Access Control and Permission Management](https://docs.looker.com/admin-options/tutorials/permissions) docs page.<br /><br />
 
 
 

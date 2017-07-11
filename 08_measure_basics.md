@@ -17,13 +17,13 @@ measure: total_sale_price {
   sql: ${sale_price} ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=WHIBHhD6wQdymUPI0Fz4ja" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Sale Price</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://looker.com/docs/reference/field-params/measure" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>measure</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items?qid=WHIBHhD6wQdymUPI0Fz4ja" target="_blank"><i class="fa fa-search"></i> Explore the <b>Total Sale Price</b> Measure</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-params/measure" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>measure</b> Docs</a><br /><br />
 
 If we break this down:
 
 + The first row `measure: total_sale_price {` creates a measure with the name of `total_sale_price`.
 
-+ The second row `type: sum` gives the measure a type. All of the possible types are defined on our [Measure Types](https://looker.com/docs/reference/field-reference/measure-type-reference) docs page, but we'll also go over them in the [next lesson](https://learn2.looker.com/projects/e-commerce/files/09_measure_types.md).
++ The second row `type: sum` gives the measure a type. All of the possible types are defined on our [Measure Types](https://docs.looker.com/reference/field-reference/measure-type-reference) docs page, but we'll also go over them in the [next lesson](https://learn2.looker.com/projects/e-commerce/files/09_measure_types.md).
 
 + The third row `sql: ${sale_price} ;;` defines what will be included in the sum.
 
