@@ -5,9 +5,9 @@ view: user_order_facts {
         user_id,
         MIN(DATE(created_at)) AS first_order_date
       FROM
-        users
+        orders
       GROUP BY
-        customer_id ;;
+        user_id ;;
     persist_for: "24 hours"
     distribution_style: all
   }
