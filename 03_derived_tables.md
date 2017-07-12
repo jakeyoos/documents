@@ -34,7 +34,6 @@ view: user_order_facts {
         users
       GROUP BY
         customer_id ;;
-    persist_for: "24 hours"
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>User Order Facts</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>derived_table</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/sql-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/view-params/persist_for-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>persist_for</b> Docs</a><br /><br />
 
@@ -48,15 +47,13 @@ If we break this down:
 
 + The fourth to tenth rows contain the actual SQL for the derived table. Remember to end the SQL with `;;`
 
-+ The eleventh row `persist_for: "24 hours"` tells Looker to store the results for 24 hours at a time. If this row was excluded, Looker would calculate the table every time it was used in a query.
-
-You’ll notice there are a couple other dimensions within the user_order_facts view, which we'll discuss in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md).<br /><br />
+You’ll notice there are a couple other dimensions within the <a href="https://learn2.looker.com/projects/e-commerce/files/user_order_facts.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">user_order_facts</a> view, which we'll discuss in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md).<br /><br />
 
 
 
 <h2 style="color:rgb(100,81,138)">Understanding Persistence</h2>
 
-In the example above, we saw one option for setting persistence: `persist_for: "24 hours"`. However, there are other persistence options available. It's also important to understand some of the details about how persistence works and the impact that it can have. Please read our [Derived Tables](https://docs.looker.com/data-modeling/learning-lookml/derived-tables#adding_persistence) documentation to fully understand this feature.<br /><br />
+In the example above, the derived table is not being persisted (i.e. "stored") in the database. However, persistence is often very useful for improving the performance of derived tables. Please read our [Derived Tables](https://docs.looker.com/data-modeling/learning-lookml/derived-tables#adding_persistence) documentation to fully understand this feature.<br /><br />
 
 
 
