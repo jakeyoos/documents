@@ -1,3 +1,4 @@
+#this is just a comment test
 connection: "thelook_events"
 include: "*.view.lkml"
 
