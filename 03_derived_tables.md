@@ -34,6 +34,7 @@ view: user_order_facts {
         users
       GROUP BY
         customer_id ;;
+  }
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>User Order Facts</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>derived_table</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/sql-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/view-params/persist_for-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>persist_for</b> Docs</a><br /><br />
 
@@ -46,6 +47,8 @@ If we break this down:
 + The third row `sql:` starts the section of LookML where you'll write the query for the derived table.
 
 + The fourth to tenth rows contain the actual SQL for the derived table. Remember to end the SQL with `;;`
+
++ The last row `}` closes the derived table.
 
 You’ll notice there are a couple other dimensions within the <a href="https://learn2.looker.com/projects/e-commerce/files/user_order_facts.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">user_order_facts</a> view, which we'll discuss in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md).<br /><br />
 

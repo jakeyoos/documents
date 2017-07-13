@@ -8,8 +8,6 @@ view: user_order_facts {
         orders
       GROUP BY
         user_id ;;
-    persist_for: "24 hours"
-    distribution_style: all
   }
 
   dimension: user_id {
