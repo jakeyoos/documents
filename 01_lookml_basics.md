@@ -1,6 +1,6 @@
 <h1 style="color:rgb(100,81,138)">LookML Basics</h1>
 
-Welcome to our e-commerce tutorial. Unlike the [Name Game](https://learn2.looker.com/projects/name_game/files/lesson_1_text.md), this tutorial goes into considerbaly more detail about how to develop in LookML. Since LookML has so many options, this tutorial won't cover every possible detail, but it will cover enough to address the most common use cases.
+Welcome to our e-commerce tutorial. Unlike the [Name Game](https://learn.looker.com/projects/name_game/files/lesson_1_text.md), this tutorial goes into considerbaly more detail about how to develop in LookML. Since LookML has so many options, this tutorial won't cover every possible detail, but it will cover enough to address the most common use cases.
 
 The data set we're working with here is sales data from an e-commerce clothing store. It has a few, relatively straightforward data tables. Some of the information and join relationships in this schema are redundant, so we've marked those in grey.
 
@@ -16,7 +16,7 @@ There are a few fundamental structures from which you'll build almost everything
 
 **Fields** - In general, each bit of data that your users are going to choose from will be represented as a LookML field. There are 4 different types of fields:
 
-+ *Dimensions* - An easy way to think of dimensions is that they represent a column of data in a database table, or a transformation or combination of columns. There are some nuances which we'll discuss with more detail in a [later lesson](https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md).
++ *Dimensions* - An easy way to think of dimensions is that they represent a column of data in a database table, or a transformation or combination of columns. There are some nuances which we'll discuss with more detail in a [later lesson](https://learn.looker.com/projects/e-commerce/files/04_dimension_basics.md).
 
 + *Dimension Groups* - Dimension groups allow you to create many dimensions all at once. Currently, they're solely for use with time based data.
 
@@ -36,11 +36,11 @@ There are a few fundamental structures from which you'll build almost everything
 
 **Fields** live inside of views.
 
-**Views** are stored in view files, which you'll see listed on the left hand side of this page. Techncially speaking you can define more than one view inside a single view file, but we discourage it because it can be hard to find things. Similarly, we suggest that you name your view files according to the view that's inside them. Feel free to check out the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view file if you want to see what a view - and its fields - looks like. We'll explain all of their contents in subsequent lessons.
+**Views** are stored in view files, which you'll see listed on the left hand side of this page. Techncially speaking you can define more than one view inside a single view file, but we discourage it because it can be hard to find things. Similarly, we suggest that you name your view files according to the view that's inside them. Feel free to check out the <a href="https://learn.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view file if you want to see what a view - and its fields - looks like. We'll explain all of their contents in subsequent lessons.
 
 **Explores** live inside of models.
 
-**Models** are stored in model files, which you'll also see listed on the left hand side of this page. By definition, there is only one model per model file. This is because you create a model by creating its file. The model name is the name of the file. Feel free to check out the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file if you want to see what a model - and its explores - looks like. We'll explain all of their contents in subsequent lessons.<br /><br />
+**Models** are stored in model files, which you'll also see listed on the left hand side of this page. By definition, there is only one model per model file. This is because you create a model by creating its file. The model name is the name of the file. Feel free to check out the <a href="https://learn.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file if you want to see what a model - and its explores - looks like. We'll explain all of their contents in subsequent lessons.<br /><br />
 
 
 
@@ -49,5 +49,5 @@ There are a few fundamental structures from which you'll build almost everything
 Let's start by looking at the basics of views.
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/02_view_basics.md">View Basics &#10095;</a>
+  <a href="https://learn.looker.com/projects/e-commerce/files/02_view_basics.md">View Basics &#10095;</a>
 </div>

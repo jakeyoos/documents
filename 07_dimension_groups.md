@@ -10,10 +10,10 @@ It is possible to create individual time-based dimensions, but the normal patter
 
 All dimension groups require a type of time, the list of timeframes to be generated, and a SQL definition.  Dimension groups assume you're providing a datetime, but if you have another type of time information, you can specify that with the `datatype` parameter.
 
-For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view file has a dimension group called `created` inside of it:
+For example, the <a href="https://learn.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view file has a dimension group called `created` inside of it:
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
- From the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> View File</a>
+ From the <a href="https://learn.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> View File</a>
 </div>
 ```
 dimension_group: created {
@@ -31,7 +31,7 @@ dimension_group: created {
   sql: ${TABLE}.created_at ;;
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/orders?qid=3p4HPhJyr3HYuEEkdN1Bar" target="_blank"><i class="fa fa-search"></i> Explore All of the Created Time Dimensions</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-params/dimension_group" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>dimension_group</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn.looker.com/explore/e_commerce/orders?qid=3p4HPhJyr3HYuEEkdN1Bar" target="_blank"><i class="fa fa-search"></i> Explore All of the Created Time Dimensions</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-params/dimension_group" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>dimension_group</b> Docs</a><br /><br />
 
 If we break this down:
 
@@ -84,9 +84,9 @@ dimension: created_week {
 Now that you have a grasp of dimensions and dimension groups, it's time to look at their sibling: measures.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/06_dimension_options.md">&#10094; Dimension Options</a>
+  <a href="https://learn.looker.com/projects/e-commerce/files/06_dimension_options.md">&#10094; Dimension Options</a>
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/08_measure_basics.md">Measure Basics &#10095;</a>
+  <a href="https://learn.looker.com/projects/e-commerce/files/08_measure_basics.md">Measure Basics &#10095;</a>
 </div>

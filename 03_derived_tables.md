@@ -18,10 +18,10 @@ You might also want to use derived tables to improve query performance, which <i
 
 <h2 style="color:rgb(100,81,138)">Anatomy of a Derived Table</h2>
 
-Derived tables only require you to specify their SQL. For example, the top of the <a href="https://learn2.looker.com/projects/e-commerce/files/user_order_facts.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">user_order_facts</a> view file looks like this:
+Derived tables only require you to specify their SQL. For example, the top of the <a href="https://learn.looker.com/projects/e-commerce/files/user_order_facts.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">user_order_facts</a> view file looks like this:
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
- From the <a href="https://learn2.looker.com/projects/e-commerce/files/user_order_facts.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">user_order_facts</a> View File</a>
+ From the <a href="https://learn.looker.com/projects/e-commerce/files/user_order_facts.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">user_order_facts</a> View File</a>
 </div>
 ```
 view: user_order_facts {
@@ -36,7 +36,7 @@ view: user_order_facts {
         customer_id ;;
   }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>User Order Facts</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>derived_table</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/sql-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/view-params/persist_for-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>persist_for</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn.looker.com/explore/e_commerce/user_order_facts" target="_blank"><i class="fa fa-search"></i> Explore the <b>User Order Facts</b> View</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>derived_table</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/view-params/sql-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/view-params/persist_for-for-derived_table" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>persist_for</b> Docs</a><br /><br />
 
 If we break this down:
 
@@ -50,7 +50,7 @@ If we break this down:
 
 + The last row `}` closes the derived table.
 
-You’ll notice there are a couple other dimensions within the <a href="https://learn2.looker.com/projects/e-commerce/files/user_order_facts.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">user_order_facts</a> view, which we'll discuss in our [next lesson](https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md).<br /><br />
+You’ll notice there are a couple other dimensions within the <a href="https://learn.looker.com/projects/e-commerce/files/user_order_facts.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">user_order_facts</a> view, which we'll discuss in our [next lesson](https://learn.looker.com/projects/e-commerce/files/04_dimension_basics.md).<br /><br />
 
 
 
@@ -71,9 +71,9 @@ All of the additional derived tables settings that you can apply in LookML can b
 Next, we'll look at the basics of dimensions.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/02_view_basics.md">&#10094; View Basics</a>
+  <a href="https://learn.looker.com/projects/e-commerce/files/02_view_basics.md">&#10094; View Basics</a>
 </div>
 
 <div style="float:right;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md">Dimension Basics &#10095;</a>
+  <a href="https://learn.looker.com/projects/e-commerce/files/04_dimension_basics.md">Dimension Basics &#10095;</a>
 </div>

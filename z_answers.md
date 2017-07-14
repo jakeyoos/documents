@@ -14,7 +14,7 @@ The `orders` table in our dataset has a string column called `traffic_source` th
 
 <h4 style="color:rgb(141,127,185)">Answer</h4>
 
-Add the following dimension to the <a href="https://learn2.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view file:
+Add the following dimension to the <a href="https://learn.looker.com/projects/e-commerce/files/orders.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">orders</a> view file:
 
 ```
 dimension: traffic_source {
@@ -25,7 +25,7 @@ dimension: traffic_source {
 
 <h4 style="color:rgb(141,127,185)">Double Check</h4>
 
-After adding this dimension, [explore the orders view](https://learn2.looker.com/explore/e_commerce/orders) to see it in action.<br /><br />
+After adding this dimension, [explore the orders view](https://learn.looker.com/explore/e_commerce/orders) to see it in action.<br /><br />
 
 
 
@@ -39,7 +39,7 @@ The `products` view has a dimension called `retail_price`. Try adding a `total_r
 
 <h4 style="color:rgb(141,127,185)">Answer</h4>
 
-Add the following dimension to the <a href="https://learn2.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view file:
+Add the following dimension to the <a href="https://learn.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view file:
 
 ```
 dimension: total_retail_price {
@@ -50,7 +50,7 @@ dimension: total_retail_price {
 
 <h4 style="color:rgb(141,127,185)">Double Check</h4>
 
-After adding this dimension, [explore the products view](https://learn2.looker.com/explore/e_commerce/products) to see it in action.<br /><br />
+After adding this dimension, [explore the products view](https://learn.looker.com/explore/e_commerce/products) to see it in action.<br /><br />
 
 
 
@@ -64,7 +64,7 @@ Try adding as many joins as possible to the `products` explore.
 
 <h4 style="color:rgb(141,127,185)">Answer</h4>
 
-Add the following joins to the `products` explore in the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file:
+Add the following joins to the `products` explore in the <a href="https://learn.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file:
 
 ```
 explore: products {
@@ -108,4 +108,4 @@ explore: products {
 
 <h4 style="color:rgb(141,127,185)">Double Check</h4>
 
-After adding these joins, [explore the products explore](https://learn2.looker.com/explore/e_commerce/products) to see it in action.
+After adding these joins, [explore the products explore](https://learn.looker.com/explore/e_commerce/products) to see it in action.

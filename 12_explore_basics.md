@@ -6,17 +6,17 @@ An **explore** is how you expose a **view** into the Explore menu. It's also use
 
 <h2 style="color:rgb(100,81,138)">Anatomy of a Basic Explore</h2>
 
-Although it is possible to give explores arbitrary names by using additional LookML parameters, typically you'll name an explore with the name of a view. For example, the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file has an explore called `product` inside of it:
+Although it is possible to give explores arbitrary names by using additional LookML parameters, typically you'll name an explore with the name of a view. For example, the <a href="https://learn.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> model file has an explore called `product` inside of it:
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
- From the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> Model File</a>
+ From the <a href="https://learn.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> Model File</a>
 </div>
 ```
 explore: products { }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/products"><i class="fa fa-search"></i> Explore the <b>Products</b> Explore</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/explore-params/explore" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>explore</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn.looker.com/explore/e_commerce/products"><i class="fa fa-search"></i> Explore the <b>Products</b> Explore</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/explore-params/explore" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>explore</b> Docs</a><br /><br />
 
-We've defined a view called "products" in the <a href="https://learn2.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view file, and created an explore from it. This is not a particularly interesting explore, but it does expose the "products" view into the Explore menu.<br /><br />
+We've defined a view called "products" in the <a href="https://learn.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view file, and created an explore from it. This is not a particularly interesting explore, but it does expose the "products" view into the Explore menu.<br /><br />
 
 
 
@@ -25,7 +25,7 @@ We've defined a view called "products" in the <a href="https://learn2.looker.com
 As we've seen, views are similar to SQL tables. Just as you can join tables together in SQL, you can join views together within an explore. Let's look at the more complex and more typical "order_items" explore:
 
 <div style="border-radius:5px 5px 0 0;padding:8px;background-color:rgb(221,221,221);">
- From the <a href="https://learn2.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> Model File</a>
+ From the <a href="https://learn.looker.com/projects/e-commerce/files/e_commerce.model.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">e_commerce</a> Model File</a>
 </div>
 ```
 explore: order_items {
@@ -66,7 +66,7 @@ explore: order_items {
   }
 }
 ```
-<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn2.looker.com/explore/e_commerce/order_items"><i class="fa fa-search"></i> Explore the <b>Order Items</b> Explore</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/explore-params/explore" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>explore</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/explore-params/join" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>join</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/explore-params/sql_on" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql_on</b> Docs</a><br /><a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/explore-params/type-for-join" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/explore-params/relationship" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>relationship</b> Docs</a><br /><br />
+<a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn.looker.com/explore/e_commerce/order_items"><i class="fa fa-search"></i> Explore the <b>Order Items</b> Explore</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/explore-params/explore" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>explore</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/explore-params/join" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>join</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/explore-params/sql_on" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>sql_on</b> Docs</a><br /><a style="color:rgb(32,165,222);font-size:12px;margin-right:20px;" href="https://docs.looker.com/reference/explore-params/type-for-join" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>type</b> Docs</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/explore-params/relationship" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>relationship</b> Docs</a><br /><br />
 
 To break down just the first few rows:
 
@@ -74,7 +74,7 @@ To break down just the first few rows:
 
 + The second row `join: orders {` joins the `orders` view into the `order_items` view
 
-+ The third row `sql_on: ${orders.id} = ${order_items.order_id} ;;` establishes the join condition between the `order_items` and `orders` view. Notice we can use the `${view_name.field_name}` references that we learned about in the [dimensions lesson](https://learn2.looker.com/projects/e-commerce/files/04_dimension_basics.md).
++ The third row `sql_on: ${orders.id} = ${order_items.order_id} ;;` establishes the join condition between the `order_items` and `orders` view. Notice we can use the `${view_name.field_name}` references that we learned about in the [dimensions lesson](https://learn.looker.com/projects/e-commerce/files/04_dimension_basics.md).
 
 + The fourth row `type: left_outer` defines the join as a `LEFT JOIN`. The `left_outer` value is the default value, so this row could have been excluded. Using a `LEFT JOIN` is *almost* always the correct decision, because it allows users to see all the data from `order_items`, even if there is no corresponding data in the joined views.
 
@@ -114,7 +114,7 @@ When a view is joined directly to an explore, like the `orders` view in the exam
 
 When a view is joined to an explore through another view - such as how `users` joins through `orders` to `order_items` in this example - the relationship being defined is from the intermediate view (`orders`) to the final view (`users`). In this example we're saying there could be many orders for one user.
 
-As mentioned in the [dimension options lesson](https://learn2.looker.com/projects/e-commerce/files/06_dimension_options.md), another critical step to keeping things functioning properly is to define a primary key for each view.<br /><br />
+As mentioned in the [dimension options lesson](https://learn.looker.com/projects/e-commerce/files/06_dimension_options.md), another critical step to keeping things functioning properly is to define a primary key for each view.<br /><br />
 
 <h4 style="color:rgb(141,127,185)">Why Have More than One Explore?</h4>
 
@@ -128,7 +128,7 @@ That's a mouthful, so an example may help. In the "order_items" explore we just 
 
 Try adding as many joins as possible to the `products` explore.
 
-<a href="https://learn2.looker.com/projects/e-commerce/files/z_answers.md#explore-basics" style="color:rgb(234,138,47);font-size:12px;"><i class="fa fa-check-square-o"></i> See the Answer</a><br /><br />
+<a href="https://learn.looker.com/projects/e-commerce/files/z_answers.md#explore-basics" style="color:rgb(234,138,47);font-size:12px;"><i class="fa fa-check-square-o"></i> See the Answer</a><br /><br />
 
 
 
@@ -137,5 +137,5 @@ Try adding as many joins as possible to the `products` explore.
 We're working on additional lessons that cover more advanced features and use cases. Until then, we hope these lessons were helpful to you. Please feel free to continue playing around with this dataset and LookML model to expand your understanding of Looker.
 
 <div style="float:left;font-weight:bold;">
-  <a href="https://learn2.looker.com/projects/e-commerce/files/11_model_basics.md">&#10094; Model Basics</a>
+  <a href="https://learn.looker.com/projects/e-commerce/files/11_model_basics.md">&#10094; Model Basics</a>
 </div>
