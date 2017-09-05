@@ -1,6 +1,6 @@
 <h1 style="color:rgb(100,81,138)">LookML Basics</h1>
 
-Welcome to our e-commerce tutorial. Unlike the [Name Game](https://learn.looker.com/projects/name_game/files/lesson_1_text.md), this tutorial goes into considerbaly more detail about how to develop in LookML. Since LookML has so many options, this tutorial won't cover every possible detail, but it will cover enough to address the most common use cases.
+Welcome to our e-commerce tutorial. Unlike the [Name Game](https://learn.looker.com/projects/name_game/files/lesson_1_text.md), this tutorial goes into considerably more detail about how to develop in LookML. Since LookML has so many options, this tutorial won't cover every possible detail, but it will cover enough to address the most common use cases.
 
 The data set we're working with here is sales data from an e-commerce clothing store. It has a few, relatively straightforward data tables. Some of the information and join relationships in this schema are redundant, so we've marked those in grey.
 
