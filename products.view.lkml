@@ -34,7 +34,7 @@ view: products {
     sql: ${TABLE}.brand ;;
     link: {
       label: "Google Search"
-      url: "http://www.google.com/search?q={{ value }}"
+      url: "http://www.google.com/search?q={{ value }}+Clothing"
       icon_url: "http://google.com/favicon.ico"
     }
   }
