@@ -1,8 +1,8 @@
 <h1 style="color:rgb(100,81,138)">Derived Tables</h1>
 
-If you need to, you can create database tables using Looker's "derived tables" feature, which you can read about in more detail in our [Derived Tables](https://docs.looker.com/data-modeling/learning-lookml/derived-tables) documentation. Derived tables have many uses, such as calculating summary metrics and pre-aggregating data.
+If you need to, you can create database tables using Looker's **derived tables** feature, which you can read about in more detail in our [Derived Tables](https://docs.looker.com/data-modeling/learning-lookml/derived-tables) documentation. Derived tables have many uses, such as calculating summary metrics and pre-aggregating data.
 
-Derived tables can be calculated on the fly each time they're queried, or they can be stored in your database. If you want derived tables to be storable, your admins will have needed to enable that feature when they setup Looker.
+Derived tables can be calculated on the fly each time they're queried, or they can be stored in your database. If you want derived tables to be storable, your admins will have needed to enable that feature when they setup Looker. This type of derived table is covered in our [advanced tutorials](https://learn.looker.com/projects/advanced_lookml/files/04_persistent_derived_tables.md).
 
 When you create a derived table, you'll write a SQL query against your database. The results of that query are then treated as a table within Looker. You can then use that table as normal to create dimensions, measures, etc. in LookML.
 
@@ -56,7 +56,7 @@ You’ll notice there are a couple other dimensions within the <a href="https://
 
 <h2 style="color:rgb(100,81,138)">Understanding Persistence</h2>
 
-In the example above, the derived table is not being persisted (i.e. "stored") in the database. However, persistence is often very useful for improving the performance of derived tables. Please read our [Derived Tables](https://docs.looker.com/data-modeling/learning-lookml/derived-tables#adding_persistence) documentation to fully understand this feature.<br /><br />
+In the example above, the derived table is not being persisted (i.e. "stored") in the database. However, persistence is often very useful for improving the performance of derived tables. Please check out our [advanced tutorials](https://learn.looker.com/projects/advanced_lookml/files/04_persistent_derived_tables.md) or read our [Derived Tables](https://docs.looker.com/data-modeling/learning-lookml/derived-tables#adding_persistence) documentation to fully understand this feature.<br /><br />
 
 
 

@@ -38,7 +38,7 @@ dimension: brand {
 ```
 <a style="color:rgb(87,190,190);font-size:12px;margin-right:20px;" href="https://learn.looker.com/explore/e_commerce/products?qid=kUVCENJS8RwyTBEpyO5MIS" target="_blank"><i class="fa fa-search"></i> Explore the <b>Brand</b> Dimension</a> <a style="color:rgb(32,165,222);font-size:12px;" href="https://docs.looker.com/reference/field-params/link" target="_blank"><i class="fa fa-file-text-o"></i> Read <b>link</b> Docs</a><br /><br />
 
-You can insert dynamic values into the URL by using the liquid templating language, which is documented on our [html](https://docs.looker.com/reference/field-params/html#liquid_variables) parameter docs page.<br /><br />
+You can insert dynamic values into the URL by using the liquid templating language, which is covered in our [advanced tutorials](https://learn.looker.com/projects/advanced_lookml/files/06_liquid_templating.md) and documented on our [Liquid Variable Reference](https://docs.looker.com/reference/liquid-variables) docs page.<br /><br />
 
 <h4 style="color:rgb(141,127,185)">case</h4>
 

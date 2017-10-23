@@ -14,7 +14,7 @@ As mentioned in the intro, you should have a basic comfort level with SQL in ord
 
 There are a few fundamental structures from which you'll build almost everything in LookML:
 
-**Fields** - In general, each bit of data that your users are going to choose from will be represented as a LookML field. There are 4 different types of fields:
+**Fields** - In general, each bit of data that your users are going to choose from will be represented as a LookML field. There are five different types of fields:
 
 + *Dimensions* - An easy way to think of dimensions is that they represent a column of data in a database table, or a transformation or combination of columns. There are some nuances which we'll discuss with more detail in a [later lesson](https://learn.looker.com/projects/e-commerce/files/04_dimension_basics.md).
 
@@ -22,7 +22,9 @@ There are a few fundamental structures from which you'll build almost everything
 
 + *Measures* - Measures represent aggregate functions - like `COUNT`, `SUM`, and `MAX` - in the SQL query that Looker builds.
 
-+ *Filters* - It's important to note that, in general, you don't need to explicitly create filters for your users. The dimensions and measures you create will automatically be available to your users as filters. However, there are some advanced use cases where you need to create a filter that *doesn't* have a dimension or measure associated with it. We won't be covering this type of field in this tutorial, but you can read about them in our [Templated Filter](https://docs.looker.com/data-modeling/learning-lookml/templated-filters) doc if you like.
++ *Filters* - It's important to note that, in general, you don't need to explicitly create filters for your users. The dimensions and measures you create will automatically be available to your users as filters. However, there are some advanced use cases where you need to create a filter that *doesn't* have a dimension or measure associated with it. We won't be covering this type of field in this tutorial, but you can learn about them later in our [advanced tutorials](https://learn.looker.com/projects/advanced_lookml/files/07_parameters_and_templated_filters.md).
+
++ *Parameters* - The Parameter field type is similar to the Filter field type, but is used for a slightly different use case. As with Filters, we won't be covering this type of field here, but they are also covered in our [advanced tutorials](https://learn.looker.com/projects/advanced_lookml/files/07_parameters_and_templated_filters.md).
 
 **Views** - Views represent the tables in your database. Or, you can create your own tables with Looker, and then make that into a view.
 
