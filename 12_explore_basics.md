@@ -134,8 +134,12 @@ Try adding as many joins as possible to the `products` explore.
 
 <h2 style="color:rgb(100,81,138)">You're Finished!</h2>
 
-We're working on additional lessons that cover more advanced features and use cases. Until then, we hope these lessons were helpful to you. Please feel free to continue playing around with this dataset and LookML model to expand your understanding of Looker.
+We hope these basic lessons were helpful to you. When you're ready, move onto our [Advanced LookML Tutorial](https://learn.looker.com/projects/advanced_lookml/files/01_intro.md) to learn about more advanced features.
 
 <div style="float:left;font-weight:bold;">
   <a href="https://learn.looker.com/projects/e-commerce/files/11_model_basics.md">&#10094; Model Basics</a>
+</div>
+
+<div style="float:right;font-weight:bold;">
+  <a href="https://learn.looker.com/projects/advanced_lookml/files/01_intro.md">Advanced Tutorial &#10095;</a>
 </div>
