@@ -41,7 +41,7 @@ The <a href="https://learn.looker.com/projects/e-commerce/files/products.view.lk
 
 <h2 style="color:rgb(100,81,138)">Next Step</h2>
 
-Next, we'll look at examples of most of the available measure types.
+Next, we'll look at examples of the most used measure types.
 
 <div style="float:left;font-weight:bold;">
   <a href="https://learn.looker.com/projects/e-commerce/files/07_dimension_groups.md">&#10094; Dimension Groups</a>

@@ -1,6 +1,6 @@
 <h1 style="color:rgb(100,81,138)">Measure Types</h1>
 
-Measures have many different types. In this lesson we'll look at examples of most of these types and briefly talk about when to use them. For more complete documentation about types, check out our [Measure Types](https://docs.looker.com/reference/field-reference/measure-type-reference) page.<br /><br />
+Measures have many different types. In this lesson we'll look at examples of the most used types and briefly talk about when to use them. For more complete documentation about types, check out our [Measure Types](https://docs.looker.com/reference/field-reference/measure-type-reference) page.<br /><br />
 
 <h4 style="color:rgb(141,127,185)">Count</h4>
 
