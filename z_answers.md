@@ -29,7 +29,7 @@ After adding this dimension, [explore the orders view](https://learn.looker.com/
 
 
 
-<a name="dimension-basics"></a>
+<a name="measure-basics"></a>
 
 <h2 style="color:rgb(100,81,138)">Measure Basics</h2>
 
@@ -39,10 +39,10 @@ The `products` view has a dimension called `retail_price`. Try adding a `total_r
 
 <h4 style="color:rgb(141,127,185)">Answer</h4>
 
-Add the following dimension to the <a href="https://learn.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view file:
+Add the following measure to the <a href="https://learn.looker.com/projects/e-commerce/files/products.view.lkml" style="font-family:Monaco,Menlo,Consolas,Courier New,monospace;">products</a> view file:
 
 ```
-dimension: total_retail_price {
+measure: total_retail_price {
   type: sum
   sql: ${retail_price} ;;
 }
